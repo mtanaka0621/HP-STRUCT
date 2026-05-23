@@ -1,0 +1,2474 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>料金プラン - STRUCT All in One ERP</title>
+  <meta name="description" content="STRUCTの料金プランをご確認ください。6ヶ月無料トライアル付き。シンプルな月額料金でバックオフィス業務をすべて統合。" />
+  <link rel="icon" href="images/struct_logo.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+
+  <!-- Custom CSS (共通) -->
+  <link rel="stylesheet" href="css/style.css?v=20260522a" />
+
+  <style>
+
+  /* =====================================================
+     PRICING PAGE — 固有スタイル
+  ===================================================== */
+
+  /* ページ全体の背景 */
+  .pricing-page {
+    background: #ffffff;
+    color: var(--text-primary);
+  }
+
+  /* ヒーローヘッダー */
+  .pricing-hero {
+    padding: 140px 0 80px;
+    text-align: center;
+    background: linear-gradient(170deg, #e8f4fd 0%, #edf5ff 40%, #f5f0ff 70%, #ffffff 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  .pricing-hero::before {
+    content: '';
+    position: absolute;
+    top: -100px; left: 50%;
+    transform: translateX(-50%);
+    width: 800px; height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse, rgba(147,51,234,0.08) 0%, rgba(97,82,255,0.05) 50%, transparent 70%);
+    pointer-events: none;
+  }
+  .pricing-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px 6px 10px;
+    background: rgba(147,51,234,0.08);
+    border: 1px solid rgba(147,51,234,0.2);
+    border-radius: 99px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #9333ea;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  .pricing-hero-badge span {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: #9333ea;
+    box-shadow: 0 0 8px #9333ea;
+    animation: pulseDot 1.5s ease-in-out infinite;
+  }
+  .pricing-hero h1 {
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+  }
+  .pricing-hero h1 .highlight {
+    background: linear-gradient(120deg, #9333ea, #EC4C86);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .pricing-hero p {
+    font-size: 18px;
+    color: var(--text-secondary);
+    max-width: 560px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+  }
+  .pricing-hero-cta {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* ==================
+     料金カード
+  ================== */
+  .pricing-section {
+    padding: 100px 0;
+    background: #ffffff;
+  }
+  .pricing-cards {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  /* --- 単一プランカード全体 --- */
+  .pricing-single-card {
+    width: 100%;
+    max-width: 780px;
+    background: #fff;
+    border-radius: 32px;
+    box-shadow: 0 12px 60px rgba(147,51,234,0.14), 0 0 0 1.5px rgba(147,51,234,0.18);
+    overflow: hidden;
+  }
+  /* --- 上部グラデーションヘッダー --- */
+  .pscard-header {
+    background: linear-gradient(135deg,#6B21A8,#9333ea 40%,#EC4C86);
+    padding: 44px 52px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .pscard-header::before {
+    content:'';
+    position:absolute;inset:0;
+    background: radial-gradient(ellipse at 20% 50%,rgba(255,255,255,0.12) 0%,transparent 60%),
+                radial-gradient(ellipse at 80% 20%,rgba(255,255,255,0.10) 0%,transparent 50%);
+  }
+  .pscard-header-inner { position:relative;z-index:1; }
+  .pscard-free-label {
+    display:inline-block;
+    font-size:13px;font-weight:700;
+    color:rgba(255,255,255,0.75);
+    letter-spacing:0.12em;text-transform:uppercase;
+    margin-bottom:10px;
+  }
+  .pscard-free-title {
+    font-size: clamp(40px,7vw,68px);
+    font-weight:900;
+    color:#fff;
+    line-height:1;
+    letter-spacing:-0.03em;
+    margin-bottom:12px;
+    text-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  }
+  .pscard-free-sub {
+    font-size:15px;
+    color:rgba(255,255,255,0.8);
+    font-weight:500;
+  }
+  /* --- 本体 --- */
+  .pscard-body {
+    padding: 44px 52px;
+  }
+  .pscard-since-label {
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:13px;font-weight:700;
+    color:#9333ea;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    margin-bottom:24px;
+    padding:6px 16px;
+    background:rgba(147,51,234,0.08);
+    border-radius:99px;
+    border:1px solid rgba(147,51,234,0.18);
+  }
+  /* --- ユーザー料金ハイライトカード --- */
+  .pscard-price-grid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+    margin-bottom:32px;
+  }
+  @media(max-width:600px){.pscard-price-grid{grid-template-columns:1fr;}}
+  .pscard-price-item {
+    border-radius:18px;
+    padding: 24px 20px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+  }
+  .pscard-price-item.type-biz {
+    background: linear-gradient(135deg,#6B21A8,#9333ea);
+    box-shadow: 0 8px 32px rgba(147,51,234,0.35);
+  }
+  .pscard-price-item.type-gen {
+    background: linear-gradient(135deg,#be3a7e,#EC4C86);
+    box-shadow: 0 8px 32px rgba(236,76,134,0.30);
+  }
+  .pscard-price-item::before {
+    content:'';
+    position:absolute;top:-30px;right:-30px;
+    width:100px;height:100px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.08);
+  }
+  .pscard-price-tag {
+    font-size:12px;font-weight:700;
+    color:rgba(255,255,255,0.75);
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    margin-bottom:12px;
+  }
+  .pscard-price-user {
+    font-size:14px;font-weight:800;
+    color:#fff;
+    margin-bottom:14px;
+    line-height:1.3;
+  }
+  .pscard-price-num {
+    font-size:clamp(36px,5vw,52px);
+    font-weight:900;
+    color:#fff;
+    line-height:1;
+    letter-spacing:-0.04em;
+    text-shadow:0 2px 12px rgba(0,0,0,0.15);
+  }
+  .pscard-price-unit {
+    font-size:16px;font-weight:700;
+    color:rgba(255,255,255,0.85);
+    margin-left:2px;
+  }
+  .pscard-price-day {
+    margin-top:10px;
+    font-size:12px;
+    color:rgba(255,255,255,0.7);
+    font-weight:600;
+    background:rgba(255,255,255,0.15);
+    border-radius:99px;
+    padding:3px 12px;
+    display:inline-block;
+  }
+  /* --- 企業例テーブル --- */
+  .pscard-examples {
+    background:linear-gradient(135deg,#f9f5ff,#fdf0f7);
+    border:1px solid rgba(147,51,234,0.12);
+    border-radius:16px;
+    overflow:hidden;
+    margin-bottom:24px;
+  }
+  .pscard-examples-head {
+    background:rgba(147,51,234,0.08);
+    padding:12px 20px;
+    font-size:12px;font-weight:700;
+    color:#9333ea;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    border-bottom:1px solid rgba(147,51,234,0.1);
+  }
+  .pscard-example-row {
+    display:flex;align-items:center;justify-content:space-between;
+    padding:14px 20px;
+    border-bottom:1px solid rgba(147,51,234,0.07);
+    font-size:13px;
+  }
+  .pscard-example-row:last-child{border-bottom:none;}
+  .pscard-example-size {
+    font-weight:800;color:#1e1b4b;
+    white-space:nowrap;
+    min-width:80px;
+  }
+  .pscard-example-detail {
+    color:#64748b;font-size:12px;flex:1;margin:0 12px;
+  }
+  .pscard-example-price {
+    font-weight:800;color:#9333ea;
+    white-space:nowrap;
+    font-size:14px;
+  }
+  /* --- 注記 --- */
+  .pscard-notes {
+    font-size:12px;color:#94a3b8;line-height:1.9;
+    margin-bottom:32px;
+  }
+  /* --- CTAボタン --- */
+  .pscard-cta {
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    width:100%;
+    padding:18px 24px;
+    border-radius:14px;
+    background:linear-gradient(135deg,#6B21A8,#9333ea 50%,#EC4C86);
+    color:#fff;
+    font-size:17px;font-weight:800;
+    text-decoration:none;
+    box-shadow:0 6px 28px rgba(147,51,234,0.40);
+    transition:transform 0.2s,box-shadow 0.2s;
+    letter-spacing:0.01em;
+  }
+  .pscard-cta:hover{
+    transform:translateY(-3px);
+    box-shadow:0 14px 40px rgba(147,51,234,0.50);
+  }
+  .pricing-card {
+    background: #fff;
+    border: 1px solid rgba(200,210,240,0.5);
+    border-radius: 24px;
+    padding: 40px;
+    position: relative;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 4px 24px rgba(100,120,200,0.07);
+  }
+  .pricing-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(100,120,200,0.14);
+  }
+  .pricing-card.featured {
+    border-color: #9333ea;
+    box-shadow: 0 8px 40px rgba(147,51,234,0.18), 0 0 0 1px rgba(147,51,234,0.1);
+    background: linear-gradient(135deg, #fdf4ff 0%, #f5f0ff 100%);
+  }
+  .pricing-card.featured:hover {
+    box-shadow: 0 24px 70px rgba(147,51,234,0.25);
+  }
+  .featured-badge {
+    position: absolute;
+    top: -13px; left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 18px;
+    background: linear-gradient(135deg, #9333ea, #EC4C86);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: 99px;
+    white-space: nowrap;
+    box-shadow: 0 4px 14px rgba(147,51,234,0.4);
+  }
+  .plan-name {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #9333ea;
+    margin-bottom: 8px;
+  }
+  .plan-price {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    margin-bottom: 6px;
+  }
+  .plan-price .currency { font-size: 20px; font-weight: 700; color: var(--text-primary); }
+  .plan-price .amount { font-size: 52px; font-weight: 900; letter-spacing: -0.04em; color: var(--text-primary); font-family: var(--font-en); line-height: 1; }
+  .plan-price .per { font-size: 14px; color: var(--text-secondary); font-weight: 500; }
+  .plan-note {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+    min-height: 18px;
+  }
+  .plan-desc {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 28px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid rgba(200,210,240,0.4);
+  }
+  .plan-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+  .plan-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--text-primary);
+    line-height: 1.5;
+  }
+  .plan-features li .check {
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background: rgba(147,51,234,0.1);
+    color: #9333ea;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .pricing-card.featured .plan-features li .check {
+    background: rgba(147,51,234,0.15);
+  }
+  .plan-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 14px 24px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .plan-cta.primary {
+    background: linear-gradient(135deg, #9333ea, #7c3aed);
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(147,51,234,0.4);
+  }
+  .plan-cta.primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(147,51,234,0.5);
+  }
+  .plan-cta.outline {
+    background: transparent;
+    color: #9333ea;
+    border: 1.5px solid rgba(147,51,234,0.35);
+  }
+  .plan-cta.outline:hover {
+    background: rgba(147,51,234,0.05);
+    border-color: #9333ea;
+    transform: translateY(-2px);
+  }
+  .free-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    background: rgba(16,185,129,0.1);
+    border: 1px solid rgba(16,185,129,0.25);
+    border-radius: 99px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #10B981;
+    margin-bottom: 20px;
+  }
+
+  /* ==================
+     コストシミュレーター
+  ================== */
+  /* ==================
+     シミュレーターセクション（新デザイン）
+  ================== */
+  .simulator-section {
+    padding: 100px 0;
+    background: linear-gradient(160deg, #f8f4ff 0%, #f0f4ff 100%);
+  }
+  .sim-layout {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 32px;
+    align-items: start;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  /* 左：入力パネル */
+  .sim-panel {
+    background: #fff;
+    border: 1px solid rgba(147,51,234,0.12);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 4px 40px rgba(100,80,200,0.08);
+  }
+  .sim-group {
+    margin-bottom: 36px;
+  }
+  .sim-group:last-child { margin-bottom: 0; }
+  .sim-group-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #f0e8ff;
+  }
+  .sim-group-icon {
+    width: 30px; height: 30px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #9333ea, #c026d3);
+    color: #fff;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  /* ユーザー数入力 */
+  .sim-user-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .sim-user-card {
+    background: linear-gradient(135deg, #fdf4ff, #f9f0ff);
+    border: 2px solid rgba(147,51,234,0.15);
+    border-radius: 16px;
+    padding: 20px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .sim-user-card:has(.sim-range:focus),
+  .sim-user-card:hover {
+    border-color: #9333ea;
+    box-shadow: 0 0 0 4px rgba(147,51,234,0.06);
+  }
+  .sim-user-card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  .sim-user-card-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+  .sim-user-price-tag {
+    font-size: 11px;
+    font-weight: 700;
+    color: #9333ea;
+    background: rgba(147,51,234,0.1);
+    padding: 2px 8px;
+    border-radius: 99px;
+  }
+  .sim-user-count-display {
+    font-size: 36px;
+    font-weight: 900;
+    color: #9333ea;
+    font-family: var(--font-en);
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+  .sim-user-count-display span {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-secondary);
+    margin-left: 2px;
+  }
+  .sim-user-stepper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .sim-stepper-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #9333ea;
+    background: #fff;
+    color: #9333ea;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s, color 0.15s, transform 0.1s;
+    flex-shrink: 0;
+    user-select: none;
+  }
+  .sim-stepper-btn:hover {
+    background: #9333ea;
+    color: #fff;
+    transform: scale(1.1);
+  }
+  .sim-stepper-btn:active {
+    transform: scale(0.95);
+  }
+  .sim-stepper-btn:disabled {
+    border-color: #d1d5db;
+    color: #d1d5db;
+    cursor: not-allowed;
+    transform: none;
+    background: #fff;
+  }
+  .sim-range {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 5px;
+    border-radius: 99px;
+    background: linear-gradient(to right, #9333ea var(--val, 10%), #e2e8f0 var(--val, 10%));
+    cursor: pointer;
+    margin-bottom: 4px;
+  }
+  .sim-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background: #9333ea;
+    box-shadow: 0 2px 10px rgba(147,51,234,0.5);
+    cursor: pointer;
+    border: 3px solid #fff;
+  }
+  .sim-range-minmax {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: var(--text-secondary);
+    margin-top: 2px;
+  }
+  /* サポートプラン */
+  .sim-support-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .sim-support-option {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 20px;
+    border: 2px solid rgba(200,210,240,0.6);
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+    background: #fff;
+    position: relative;
+  }
+  .sim-support-option:has(input:checked) {
+    border-color: #9333ea;
+    background: linear-gradient(135deg, #fdf4ff, #f9f0ff);
+    box-shadow: 0 0 0 4px rgba(147,51,234,0.06);
+  }
+  .sim-support-option input[type="radio"] {
+    width: 18px; height: 18px;
+    accent-color: #9333ea;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  .sim-support-option-body {
+    flex: 1;
+  }
+  .sim-support-option-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 2px;
+  }
+  .sim-support-option-desc {
+    font-size: 11px;
+    color: var(--text-secondary);
+  }
+  .sim-support-option-price {
+    font-size: 15px;
+    font-weight: 800;
+    color: #9333ea;
+    white-space: nowrap;
+  }
+  .sim-support-option-badge {
+    position: absolute;
+    top: -1px; right: 12px;
+    font-size: 9px;
+    font-weight: 700;
+    background: #10b981;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 0 0 8px 8px;
+    letter-spacing: 0.05em;
+  }
+  /* 追加オプション：時間入力 */
+  .sim-addon-hours {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 12px 16px;
+    background: #f9f0ff;
+    border-radius: 10px;
+    transition: opacity 0.2s;
+  }
+  .sim-addon-hours.disabled { opacity: 0.35; pointer-events: none; }
+  .sim-addon-hours label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    white-space: nowrap;
+  }
+  .sim-hour-input {
+    width: 80px;
+    padding: 8px 10px;
+    border: 1.5px solid rgba(147,51,234,0.3);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-align: center;
+    font-family: inherit;
+  }
+  .sim-hour-input:focus {
+    outline: none;
+    border-color: #9333ea;
+    box-shadow: 0 0 0 3px rgba(147,51,234,0.1);
+  }
+  /* 右：結果パネル */
+  .sim-result-panel {
+    background: linear-gradient(160deg, #1e1040 0%, #2d1b69 100%);
+    border-radius: 24px;
+    padding: 36px 28px;
+    position: sticky;
+    top: 100px;
+    color: #fff;
+    box-shadow: 0 8px 50px rgba(100,60,200,0.3);
+  }
+  .sim-result-header {
+    text-align: center;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+  }
+  .sim-result-eyebrow {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 8px;
+  }
+  .sim-result-amount {
+    font-size: 52px;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    color: #fff;
+    font-family: var(--font-en);
+    line-height: 1;
+  }
+  .sim-result-amount sup {
+    font-size: 22px;
+    vertical-align: super;
+    letter-spacing: 0;
+  }
+  .sim-result-unit {
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+    margin-top: 4px;
+  }
+  .sim-result-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .sim-result-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  .sim-result-row .rlabel {
+    color: rgba(255,255,255,0.65);
+    font-weight: 500;
+  }
+  .sim-result-row .rvalue {
+    color: #fff;
+    font-weight: 800;
+    font-family: var(--font-en);
+    font-size: 14px;
+  }
+  .sim-result-row.highlight {
+    background: rgba(147,51,234,0.25);
+    border-color: rgba(147,51,234,0.4);
+  }
+  .sim-result-note-box {
+    background: rgba(16,185,129,0.15);
+    border: 1px solid rgba(16,185,129,0.3);
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 11px;
+    color: #6ee7b7;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .sim-dl-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 16px 20px;
+    background: linear-gradient(135deg, #9333ea, #c026d3);
+    color: #fff;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 20px rgba(147,51,234,0.4);
+  }
+  .sim-dl-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(147,51,234,0.5);
+    color: #fff;
+    text-decoration: none;
+  }
+  .sim-dl-btn i { font-size: 17px; }
+  @media (max-width: 860px) {
+    .sim-layout { grid-template-columns: 1fr; }
+    .sim-result-panel { position: static; }
+    .sim-user-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ==================
+     業務ユーザー／一般ユーザー テーブルセクション
+  ================== */
+  .user-type-section {
+    padding: 100px 0;
+    background: #ffffff;
+  }
+  .ut-table-wrap {
+    max-width: 860px;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 32px rgba(97,82,255,0.10);
+    border: 1px solid rgba(97,82,255,0.12);
+  }
+  .ut-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+  }
+  .ut-table thead tr {
+    background: linear-gradient(135deg, #6152FF 0%, #EC4C86 100%);
+  }
+  .ut-th-feature,
+  .ut-th-biz,
+  .ut-th-gen {
+    padding: 18px 24px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+  .ut-th-feature { text-align: left; width: 28%; }
+  .ut-th-biz     { width: 36%; }
+  .ut-th-gen     { width: 36%; }
+  .ut-table tbody tr {
+    border-bottom: 1px solid rgba(97,82,255,0.08);
+    transition: background 0.2s;
+  }
+  .ut-table tbody tr:last-child { border-bottom: none; }
+  .ut-table tbody tr:hover { background: rgba(97,82,255,0.03); }
+  .ut-td-feature {
+    padding: 16px 24px;
+    font-weight: 700;
+    color: #1e293b;
+    font-size: 14px;
+    border-right: 1px solid rgba(97,82,255,0.08);
+  }
+  .ut-td-pink {
+    padding: 16px 24px;
+    text-align: center;
+    font-weight: 700;
+    color: #EC4C86;
+    font-size: 14px;
+    border-right: 1px solid rgba(97,82,255,0.08);
+  }
+  .ut-td-muted {
+    padding: 16px 24px;
+    text-align: center;
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  /* レスポンシブ */
+  @media (max-width: 640px) {
+    .ut-table { font-size: 12px; }
+    .ut-th-feature, .ut-th-biz, .ut-th-gen { padding: 14px 10px; font-size: 12px; }
+    .ut-td-feature, .ut-td-pink, .ut-td-muted { padding: 13px 10px; font-size: 12px; }
+  }
+
+  /* ==================
+     効果セクション（パネル）
+  ================== */
+  .effects-section {
+    padding: 100px 0;
+    background: #fafafa;
+  }
+  .effect-panels {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .effect-panel {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid rgba(17, 24, 39, 0.06);
+    border-radius: 16px;
+    padding: 40px 28px 32px;
+    box-shadow: 0 10px 30px rgba(17, 24, 39, 0.06), 0 2px 6px rgba(17, 24, 39, 0.04);
+    overflow: hidden;
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+  }
+  .effect-panel::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #EC4C86 0%, #a855f7 100%);
+  }
+  .effect-panel:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 48px rgba(17, 24, 39, 0.10), 0 4px 12px rgba(17, 24, 39, 0.05);
+  }
+  .effect-panel-num {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    color: #EC4C86;
+    margin-bottom: 18px;
+  }
+  .effect-panel-num::before {
+    content: '';
+    width: 24px;
+    height: 2px;
+    background: linear-gradient(90deg, #EC4C86 0%, #a855f7 100%);
+    border-radius: 2px;
+  }
+  .effect-panel-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: #9ca3af;
+    margin-bottom: 10px;
+  }
+  .effect-panel-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #111827;
+    line-height: 1.55;
+    margin: 0;
+    letter-spacing: 0.01em;
+  }
+  .effect-panel-title .accent {
+    background: linear-gradient(90deg, #EC4C86 0%, #a855f7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* ==================
+     導入フロー
+  ================== */
+  .flow-section {
+    padding: 100px 0;
+    background: #fff;
+  }
+  .flow-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .flow-steps::before {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: calc(12.5%);
+    right: calc(12.5%);
+    height: 2px;
+    background: linear-gradient(90deg, #9333ea, #EC4C86);
+    opacity: 0.25;
+    z-index: 0;
+  }
+  .flow-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 16px;
+    position: relative;
+    z-index: 1;
+  }
+  .flow-num {
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #9333ea, #6d28d9);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 20px rgba(147,51,234,0.3);
+    font-family: var(--font-en);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .flow-step:hover .flow-num {
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(147,51,234,0.45);
+  }
+  .flow-step h3 {
+    font-size: 14px;
+    font-weight: 800;
+    color: #9333ea;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .flow-step p {
+    font-size: 12px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+  }
+
+  /* ==================
+     CTAカード
+  ================== */
+  .cta-section {
+    padding: 100px 0;
+    background: #fafafa;
+  }
+  /* --- CTAカード全体ラッパー（トップページ風ダーク） --- */
+  .cta-dark-card {
+    background: linear-gradient(135deg, #0f0c29, #1e0a2e, #2d1b69, #1a1a4e);
+    border-radius: 28px;
+    padding: 64px 60px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  .cta-dark-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+  }
+  .cta-dark-orb-1 {
+    width: 400px; height: 400px;
+    background: rgba(236,76,134,0.2);
+    top: -120px; left: -100px;
+  }
+  .cta-dark-orb-2 {
+    width: 400px; height: 400px;
+    background: rgba(97,82,255,0.2);
+    bottom: -120px; right: -100px;
+  }
+  .cta-dark-inner {
+    position: relative;
+    z-index: 1;
+  }
+  .cta-dark-title {
+    font-size: clamp(32px, 4vw, 52px);
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 14px;
+  }
+  .cta-dark-desc {
+    font-size: 16px;
+    color: rgba(255,255,255,0.65);
+    margin-bottom: 48px;
+  }
+  .cta-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  @media(max-width:700px){.cta-cards{grid-template-columns:1fr;}}
+  .cta-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(8px);
+  }
+  .cta-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 48px rgba(0,0,0,0.35);
+  }
+  .cta-card-image {
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    background: radial-gradient(ellipse at 50% 60%, rgba(147,51,234,0.18) 0%, rgba(236,76,134,0.08) 60%, transparent 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cta-card-image i {
+    font-size: 60px;
+    background: linear-gradient(135deg, #c084fc, #EC4C86);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 6px 20px rgba(147,51,234,0.4));
+  }
+  .cta-card-body {
+    padding: 24px 28px 28px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .cta-card-body h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .cta-card-body p {
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.75;
+    margin-bottom: 22px;
+    flex: 1;
+  }
+  .cta-card-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #9333ea, #7c3aed);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(147,51,234,0.45);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .cta-card-btn:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 28px rgba(147,51,234,0.6);
+  }
+
+  /* ==================
+     比較表
+  ================== */
+  .compare-section {
+    padding: 100px 0;
+    background: #fff;
+  }
+  .compare-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    max-width: 860px;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 30px rgba(100,120,200,0.1);
+  }
+  .compare-table thead th {
+    padding: 20px 24px;
+    background: #f9fafb;
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--text-primary);
+    text-align: center;
+    border-bottom: 2px solid rgba(200,210,240,0.4);
+  }
+  .compare-table thead th:first-child { text-align: left; }
+  .compare-table thead th.featured-col {
+    background: linear-gradient(135deg, #fdf4ff, #f5f0ff);
+    color: #9333ea;
+    border-bottom-color: rgba(147,51,234,0.2);
+  }
+  .compare-table tbody tr:hover { background: rgba(147,51,234,0.02); }
+  .compare-table tbody td {
+    padding: 14px 24px;
+    font-size: 13px;
+    color: var(--text-secondary);
+    border-bottom: 1px solid rgba(200,210,240,0.3);
+    text-align: center;
+  }
+  .compare-table tbody td:first-child {
+    text-align: left;
+    color: var(--text-primary);
+    font-weight: 500;
+  }
+  .compare-table tbody td.featured-col {
+    background: rgba(147,51,234,0.03);
+  }
+  .compare-table tbody tr:last-child td { border-bottom: none; }
+  .compare-table .section-row td {
+    background: #f1f5f9;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    padding: 10px 24px;
+  }
+  .check-yes { color: #9333ea; font-size: 16px; }
+  .check-no { color: #d1d5db; font-size: 16px; }
+
+  /* ==================
+     FAQ
+  ================== */
+  .faq-section {
+    padding: 100px 0;
+    background: #fafafa;
+  }
+  .faq-list {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .faq-item {
+    background: #fff;
+    border: 1px solid rgba(200,210,240,0.5);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease;
+  }
+  .faq-item:hover { box-shadow: 0 4px 20px rgba(100,120,200,0.1); }
+  .faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px 24px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .faq-question h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.5;
+  }
+  .faq-icon {
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    background: rgba(147,51,234,0.08);
+    color: #9333ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, background 0.2s;
+  }
+  .faq-item.open .faq-icon {
+    transform: rotate(45deg);
+    background: #9333ea;
+    color: #fff;
+  }
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+  }
+  .faq-answer-inner {
+    padding: 0 24px 20px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    border-top: 1px solid rgba(200,210,240,0.3);
+    padding-top: 16px;
+  }
+  .faq-item.open .faq-answer { max-height: 400px; }
+
+  /* ==================
+     レスポンシブ
+  ================== */
+  @media (max-width: 1024px) {
+    .sim-cols { grid-template-columns: 1fr; }
+    .simulator-wrap { grid-template-columns: 1fr; }
+    .simulator-result { position: static; }
+    .flow-steps { grid-template-columns: 1fr 1fr; gap: 40px 20px; }
+    .flow-steps::before { display: none; }
+    .effect-panels { grid-template-columns: 1fr; gap: 20px; max-width: 520px; }
+  }
+  @media (max-width: 768px) {
+    .pricing-hero { padding: 120px 0 60px; }
+    .pricing-cards { grid-template-columns: 1fr; }
+    .compare-section { overflow-x: auto; }
+    .compare-table { min-width: 560px; }
+    .cta-cards { grid-template-columns: 1fr; }
+    .flow-steps { grid-template-columns: 1fr; }
+    .flow-steps::before { display: none; }
+    .postit-grid { grid-template-columns: 1fr; }
+    .postit:nth-child(3) { max-width: 100%; }
+    .postit { transform: rotate(0) !important; }
+    .sim-cols { grid-template-columns: 1fr; }
+  }
+  </style>
+</head>
+<body class="pricing-page">
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <svg class="logo-icon" width="34" height="34" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 2.83582C0 1.26964 1.26964 0 2.83582 0H35.1642C36.7304 0 38 1.26964 38 2.83582V35.1642C38 36.7304 36.7304 38 35.1642 38H2.83582C1.26964 38 0 36.7304 0 35.1642V2.83582Z" fill="url(#lg_hdr_p)"/><path d="M25.1413 15.6555H19.7272V13.9939C19.7272 13.2185 19.658 12.7246 19.5195 12.5123C19.3811 12.3 19.1503 12.1938 18.8272 12.1938C18.4764 12.1938 18.2087 12.3369 18.0241 12.6231C17.8487 12.9093 17.761 13.3431 17.761 13.9247C17.761 14.6724 17.8625 15.2355 18.0656 15.614C18.2595 15.9925 18.8087 16.4494 19.7134 16.9848C22.3074 18.5264 23.9413 19.7911 24.6151 20.7789C25.289 21.7666 25.626 23.359 25.626 25.556C25.626 27.153 25.4367 28.33 25.0582 29.0869C24.689 29.8439 23.969 30.4808 22.8981 30.9978C21.8273 31.5055 20.5811 31.7593 19.1595 31.7593C17.5994 31.7593 16.2655 31.4639 15.1578 30.8732C14.0593 30.2824 13.3393 29.53 12.9977 28.6161C12.6561 27.7022 12.4854 26.4053 12.4854 24.7252V23.2574H17.8995V25.9852C17.8995 26.8253 17.9733 27.3653 18.121 27.6053C18.2779 27.8453 18.5503 27.9653 18.938 27.9653C19.3257 27.9653 19.6118 27.813 19.7965 27.5084C19.9903 27.2038 20.0872 26.7514 20.0872 26.1514C20.0872 24.8313 19.9072 23.9682 19.5472 23.5621C19.178 23.1559 18.2687 22.4774 16.8194 21.5266C15.3701 20.5665 14.4101 19.8696 13.9393 19.4357C13.4685 19.0018 13.0762 18.4018 12.7623 17.6356C12.4577 16.8694 12.3054 15.8909 12.3054 14.7001C12.3054 12.9831 12.5223 11.7277 12.9562 10.9338C13.3993 10.1399 14.1101 9.52142 15.0886 9.07832C16.0671 8.62599 17.2487 8.39983 18.6333 8.39983C20.1473 8.39983 21.435 8.64445 22.4966 9.13371C23.5674 9.62296 24.2736 10.2414 24.6151 10.9892C24.9659 11.7277 25.1413 12.9877 25.1413 14.7693V15.6555Z" fill="white"/><defs><linearGradient id="lg_hdr_p" x1="0" y1="38" x2="38" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#EC4C86"/><stop offset="1" stop-color="#6152FF"/></linearGradient></defs></svg>
+        <span class="logo-text">STRUCT</span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item has-dropdown">
+          <a class="nav-link">
+            機能 <i class="fas fa-chevron-down nav-arrow"></i>
+          </a>
+          <div class="dropdown-menu">
+            <div class="dropdown-header">
+              <span class="dropdown-header-label">Features</span>
+              <span class="dropdown-header-count">8 Modules</span>
+            </div>
+            <div class="dropdown-grid">
+              <a href="features/assignment-management.html" class="dropdown-item dropdown-item--assign">
+                <i class="fas fa-users dropdown-icon"></i>
+                <div class="dropdown-text">
+                  <div class="dropdown-title">アサイン管理</div>
+                  <div class="dropdown-desc">スタッフ稼働を可視化</div>
+                </div>
+                <i class="fas fa-arrow-right dropdown-arrow"></i>
+              </a>
+              <a href="features/sales-management.html" class="dropdown-item dropdown-item--sales">
+                <i class="fas fa-chart-line dropdown-icon"></i>
+                <div class="dropdown-text">
+                  <div class="dropdown-title">販売管理</div>
+                  <div class="dropdown-desc">受注から債権まで一気通貫</div>
+                </div>
+                <i class="fas fa-arrow-right dropdown-arrow"></i>
+              </a>
+              <a href="features/purchase-management.html" class="dropdown-item dropdown-item--purchase">
+                <i class="fas fa-shopping-cart dropdown-icon"></i>
+                <div class="dropdown-text">
+                  <div class="dropdown-title">購買管理</div>
+                  <div class="dropdown-desc">外注・購買フローを最適化</div>
+                </div>
+                <i class="fas fa-arrow-right dropdown-arrow"></i>
+              </a>
+              <a href="features/attendance-expense-management.html" class="dropdown-item dropdown-item--attendance">
+                <i class="fas fa-clock dropdown-icon"></i>
+                <div class="dropdown-text">
+                  <div class="dropdown-title">勤怠・経費管理</div>
+                  <div class="dropdown-desc">打刻から精算までシームレス</div>
+                </div>
+                <i class="fas fa-arrow-right dropdown-arrow"></i>
+              </a>
+              <a href="features/approval-management.html" class="dropdown-item dropdown-item--approval">
+                <i class="fas fa-stamp dropdown-icon"></i>
+                <div class="dropdown-text">
+                  <div class="dropdown-title">承認管理</div>
+                  <div class="dropdown-desc">申請ワークフローを標準化</div>
+                </div>
+                <i class="fas fa-arrow-right dropdown-arrow"></i>
+              </a>
+              <a href="features/business-management.html" class="dropdown-item dropdown-item--business">
+                <i class="fas fa-tachometer-alt dropdown-icon"></i>
+                <div class="dropdown-text">
+                  <div class="dropdown-title">経営管理</div>
+                  <div class="dropdown-desc">組織の予実をリアルタイム把握</div>
+                </div>
+                <i class="fas fa-arrow-right dropdown-arrow"></i>
+              </a>
+              <a href="features/evaluation-management.html" class="dropdown-item dropdown-item--evaluation">
+                <i class="fas fa-star dropdown-icon"></i>
+                <div class="dropdown-text">
+                  <div class="dropdown-title">評価管理</div>
+                  <div class="dropdown-desc">人事評価プロセスを体系化</div>
+                </div>
+                <i class="fas fa-arrow-right dropdown-arrow"></i>
+              </a>
+              <a href="features/information-management.html" class="dropdown-item dropdown-item--information">
+                <i class="fas fa-info-circle dropdown-icon"></i>
+                <div class="dropdown-text">
+                  <div class="dropdown-title">情報管理</div>
+                  <div class="dropdown-desc">組織のナレッジを一元集約</div>
+                </div>
+                <i class="fas fa-arrow-right dropdown-arrow"></i>
+              </a>
+            </div>
+            <div class="dropdown-footer">
+              <a href="index.html#features" class="dropdown-footer-link">すべての機能を見る <i class="fas fa-arrow-right"></i></a>
+              <span class="dropdown-footer-note">All in One ERP</span>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="pricing.html" class="nav-link" style="color:var(--violet);font-weight:700;">価格</a>
+        </li>
+        <li class="nav-item">
+          <a href="faq.html" class="nav-link">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">お問い合わせ</a>
+        </li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://app.structapps.com/register1" class="btn btn-primary">今すぐ始める</a>
+        <a href="https://app.structapps.com" class="btn btn-ghost">ログイン</a>
+        <button class="btn btn-ghost nav-lang-btn" onclick="alert('言語切替は準備中です')">
+          <i class="fas fa-globe"></i> JP
+        </button>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PRICING HERO ===== -->
+  <section class="pricing-hero">
+    <div class="container">
+      <div class="pricing-hero-badge">
+        <span></span>
+        シンプルな料金体系
+      </div>
+      <h1>
+        <span class="highlight">シンプルな価格体系</span><br>すべてはいってこの価格<br>しかも６か月間無料。
+      </h1>
+      <p>
+        業務ユーザー、一般ユーザーそれぞれのユーザー数に応じたシンプルな月額料金。
+        日割り計算で精算され、いつでも解約可能。
+      </p>
+      <div class="pricing-hero-cta">
+        <a href="#pricing-cards" class="btn btn-outline btn-lg">
+          料金を見る <i class="fas fa-arrow-down"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 料金カード ===== -->
+  <section class="pricing-section" id="pricing-cards">
+    <div class="container">
+      <div class="section-header" style="text-align:center;margin-bottom:56px;">
+        <div class="section-badge">PRICING</div>
+        <h2 class="section-title">シンプルで<span class="gradient-text">明瞭な料金</span></h2>
+        <p class="section-desc">全ての機能が利用できるプランです。</p>
+      </div>
+
+      <div class="pricing-cards">
+        <div class="pricing-single-card">
+
+          <!-- ヘッダー：無料バナー -->
+          <div class="pscard-header">
+            <div class="pscard-header-inner">
+              <div class="pscard-free-label">開始後</div>
+              <div class="pscard-free-title">６か月間無料！</div>
+              <div class="pscard-free-sub">全ての機能がすべてはいってこの価格。まずは無料でお試しください。</div>
+            </div>
+          </div>
+
+          <!-- ボディ -->
+          <div class="pscard-body">
+
+            <!-- 7か月目以降ラベル -->
+            <div class="pscard-since-label">
+              <i class="fas fa-calendar-alt"></i> ７か月目以降の月額料金
+            </div>
+
+            <!-- ユーザー料金ハイライト -->
+            <div class="pscard-price-grid">
+              <div class="pscard-price-item type-biz">
+                <div class="pscard-price-tag">業務ユーザー 1名</div>
+                <div class="pscard-price-user">マネージャー・経営者向け</div>
+                <div>
+                  <span class="pscard-price-num">2,400</span>
+                  <span class="pscard-price-unit">円/月</span>
+                </div>
+                <div class="pscard-price-day">1日あたり約80円</div>
+              </div>
+              <div class="pscard-price-item type-gen">
+                <div class="pscard-price-tag">一般ユーザー 1名</div>
+                <div class="pscard-price-user">スタッフ・一般社員向け</div>
+                <div>
+                  <span class="pscard-price-num">600</span>
+                  <span class="pscard-price-unit">円/月</span>
+                </div>
+                <div class="pscard-price-day">1日あたり約20円</div>
+              </div>
+            </div>
+
+            <!-- 企業規模別料金例 -->
+            <div class="pscard-examples">
+              <div class="pscard-examples-head"><i class="fas fa-building"></i>&ensp;企業規模別 料金シミュレーション例</div>
+              <div class="pscard-example-row">
+                <div class="pscard-example-size">50名規模</div>
+                <div class="pscard-example-detail">業務10名＋一般40名</div>
+                <div class="pscard-example-price">¥48,000〜/月</div>
+              </div>
+              <div class="pscard-example-row">
+                <div class="pscard-example-size">100名規模</div>
+                <div class="pscard-example-detail">業務20名＋一般80名</div>
+                <div class="pscard-example-price">¥96,000〜/月</div>
+              </div>
+              <div class="pscard-example-row">
+                <div class="pscard-example-size">200名規模</div>
+                <div class="pscard-example-detail">業務40名＋一般160名</div>
+                <div class="pscard-example-price">¥192,000〜/月</div>
+              </div>
+            </div>
+
+            <!-- 注記 -->
+            <div class="pscard-notes">
+              注記：これは30日間の月を基準とした基準金額です。<br>
+              ※ 応答速度の向上をご希望されるお客様向けには、別途月額のクラウド環境費用を頂く場合があります。（通常発生しません。）
+            </div>
+
+            <!-- CTAボタン -->
+            <a href="https://app.structapps.com/register1" class="pscard-cta">
+              <i class="fas fa-rocket"></i> 今すぐ始める（６か月間無料）
+            </a>
+
+          </div><!-- /pscard-body -->
+        </div><!-- /pricing-single-card -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== コストシミュレーター ===== -->
+  <section class="simulator-section">
+    <div class="container">
+      <div class="section-header" style="text-align:center;margin-bottom:56px;">
+        <div class="section-badge" style="background:rgba(147,51,234,0.08);color:#9333ea;border-color:rgba(147,51,234,0.15);">
+          <i class="fas fa-calculator"></i> SIMULATOR
+        </div>
+        <h2 class="section-title">かんたん<span class="gradient-text">コストシミュレーション</span></h2>
+        <p class="section-desc">入力するだけで月額費用の概算がわかります。</p>
+      </div>
+
+      <div class="sim-layout">
+        <!-- 左：入力パネル -->
+        <div class="sim-panel">
+
+          <!-- グループ①：ライセンス利用ユーザー数 -->
+          <div class="sim-group">
+            <div class="sim-group-title">
+              <span class="sim-group-icon"><i class="fas fa-users"></i></span>
+              ライセンス利用ユーザー数
+            </div>
+            <div class="sim-user-grid">
+              <!-- 業務ユーザー -->
+              <div class="sim-user-card">
+                <div class="sim-user-card-head">
+                  <span class="sim-user-card-name">業務ユーザー</span>
+                  <span class="sim-user-price-tag">¥2,400/名・月</span>
+                </div>
+                <div class="sim-user-stepper">
+                  <button class="sim-stepper-btn" id="bizUsersMinus" aria-label="業務ユーザーを減らす">−</button>
+                  <div class="sim-user-count-display" id="bizUsersDisplay" style="margin-bottom:0;">10<span>名</span></div>
+                  <button class="sim-stepper-btn" id="bizUsersPlus" aria-label="業務ユーザーを増やす">＋</button>
+                </div>
+                <input type="range" class="sim-range" id="simBizUsers"
+                  min="0" max="2000" step="1" value="10" />
+                <div class="sim-range-minmax"><span>0名</span><span>2,000名</span></div>
+              </div>
+              <!-- 一般ユーザー -->
+              <div class="sim-user-card">
+                <div class="sim-user-card-head">
+                  <span class="sim-user-card-name">一般ユーザー</span>
+                  <span class="sim-user-price-tag">¥600/名・月</span>
+                </div>
+                <div class="sim-user-stepper">
+                  <button class="sim-stepper-btn" id="genUsersMinus" aria-label="一般ユーザーを減らす">−</button>
+                  <div class="sim-user-count-display" id="genUsersDisplay" style="margin-bottom:0;">5<span>名</span></div>
+                  <button class="sim-stepper-btn" id="genUsersPlus" aria-label="一般ユーザーを増やす">＋</button>
+                </div>
+                <input type="range" class="sim-range" id="simGenUsers"
+                  min="0" max="2000" step="1" value="5" />
+                <div class="sim-range-minmax"><span>0名</span><span>2,000名</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- グループ②：サポートプラン -->
+          <div class="sim-group">
+            <div class="sim-group-title">
+              <span class="sim-group-icon"><i class="fas fa-headset"></i></span>
+              サポートプラン
+            </div>
+            <div class="sim-support-options">
+              <!-- 基本サポート（無償） -->
+              <label class="sim-support-option">
+                <span class="sim-support-option-badge">無償</span>
+                <input type="radio" name="supportPlan" id="supportBasic" value="0" checked />
+                <div class="sim-support-option-body">
+                  <div class="sim-support-option-name">基本サポート</div>
+                  <div class="sim-support-option-desc">メールサポート・オンラインドキュメント</div>
+                </div>
+                <div class="sim-support-option-price">¥0<span style="font-size:11px;font-weight:500;color:rgba(147,51,234,0.6);">/月</span></div>
+              </label>
+              <!-- 有償サポート -->
+              <label class="sim-support-option">
+                <input type="radio" name="supportPlan" id="supportPaid" value="30000" />
+                <div class="sim-support-option-body">
+                  <div class="sim-support-option-name">有償サポート</div>
+                  <div class="sim-support-option-desc">専任担当者によるサポート・優先対応</div>
+                </div>
+                <div class="sim-support-option-price">¥30,000<span style="font-size:11px;font-weight:500;color:rgba(147,51,234,0.6);">/月</span></div>
+              </label>
+              <!-- 有償サポート追加（時間単位） -->
+              <label class="sim-support-option">
+                <input type="radio" name="supportPlan" id="supportExtra" value="extra" />
+                <div class="sim-support-option-body">
+                  <div class="sim-support-option-name">有償サポート追加</div>
+                  <div class="sim-support-option-desc">スポット対応・カスタマイズ支援</div>
+                </div>
+                <div class="sim-support-option-price">¥8,000<span style="font-size:11px;font-weight:500;color:rgba(147,51,234,0.6);">/時間</span></div>
+              </label>
+              <!-- 時間数入力（有償サポート追加選択時のみ表示） -->
+              <div class="sim-addon-hours disabled" id="extraHoursWrap">
+                <label for="extraHours"><i class="fas fa-clock" style="color:#9333ea;"></i> 月間利用時間</label>
+                <input type="number" class="sim-hour-input" id="extraHours" min="1" max="100" value="5" />
+                <span style="font-size:13px;color:var(--text-secondary);">時間 / 月</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /sim-panel -->
+
+        <!-- 右：結果パネル -->
+        <div class="sim-result-panel">
+          <div class="sim-result-header">
+            <div class="sim-result-eyebrow">月額費用（概算）</div>
+            <div class="sim-result-amount"><sup>¥</sup><span id="simMonthlyResult">27,000</span></div>
+            <div class="sim-result-unit">/ 月（税込概算）</div>
+          </div>
+
+          <div class="sim-result-rows">
+            <div class="sim-result-row highlight">
+              <span class="rlabel"><i class="fas fa-user-tie" style="margin-right:5px;opacity:0.7;"></i>業務ユーザー料</span>
+              <span class="rvalue" id="simBizRow">¥24,000</span>
+            </div>
+            <div class="sim-result-row highlight">
+              <span class="rlabel"><i class="fas fa-user" style="margin-right:5px;opacity:0.7;"></i>一般ユーザー料</span>
+              <span class="rvalue" id="simGenRow">¥3,000</span>
+            </div>
+            <div class="sim-result-row">
+              <span class="rlabel"><i class="fas fa-headset" style="margin-right:5px;opacity:0.7;"></i>サポートプラン</span>
+              <span class="rvalue" id="simSupportRow">¥0</span>
+            </div>
+          </div>
+
+          <div class="sim-result-note-box">
+            <i class="fas fa-gift"></i>
+            最初の6か月間は無料でご利用いただけます
+          </div>
+
+          <button type="button" class="sim-dl-btn" id="openQuoteModal">
+            <i class="fas fa-file-download"></i>
+            見積書ダウンロード
+          </button>
+        </div>
+      </div><!-- /sim-layout -->
+    </div>
+  </section>
+
+  <!-- ===== 業務ユーザーと一般ユーザー ===== -->
+  <section class="user-type-section">
+    <div class="container">
+      <div class="section-header" style="text-align:center;margin-bottom:48px;">
+        <div class="section-badge" style="background:rgba(97,82,255,0.08);color:#6152FF;border-color:rgba(97,82,255,0.18);">
+          <i class="fas fa-users"></i> USER TYPE
+        </div>
+        <h2 class="section-title">業務ユーザーと<span class="gradient-text">一般ユーザー</span></h2>
+        <p class="section-desc">STRUCTでは業務ユーザーと一般ユーザーの2種類が存在します。<br>一般ユーザーは、販売・購買管理以外の申請業務のみに限定されます。業務ユーザーであれば、すべての機能の申請・承認がご利用頂けます。</p>
+      </div>
+
+      <div class="ut-table-wrap">
+        <table class="ut-table">
+          <thead>
+            <tr>
+              <th class="ut-th-feature">機能</th>
+              <th class="ut-th-biz">業務ユーザー</th>
+              <th class="ut-th-gen">一般ユーザー</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="ut-td-feature">アサイン管理</td>
+              <td class="ut-td-pink">登録・管理機能</td>
+              <td class="ut-td-muted">－</td>
+            </tr>
+            <tr>
+              <td class="ut-td-feature">販売管理</td>
+              <td class="ut-td-pink">登録・管理機能</td>
+              <td class="ut-td-muted">－</td>
+            </tr>
+            <tr>
+              <td class="ut-td-feature">購買管理</td>
+              <td class="ut-td-pink">登録・管理機能</td>
+              <td class="ut-td-muted">－</td>
+            </tr>
+            <tr>
+              <td class="ut-td-feature">勤怠・経費管理</td>
+              <td class="ut-td-pink">登録・管理機能</td>
+              <td class="ut-td-muted">登録機能のみ</td>
+            </tr>
+            <tr>
+              <td class="ut-td-feature">評価管理</td>
+              <td class="ut-td-pink">登録・管理機能</td>
+              <td class="ut-td-muted">登録機能のみ</td>
+            </tr>
+            <tr>
+              <td class="ut-td-feature">情報管理</td>
+              <td class="ut-td-pink">登録・管理機能</td>
+              <td class="ut-td-pink">登録・管理機能</td>
+            </tr>
+            <tr>
+              <td class="ut-td-feature">承認管理</td>
+              <td class="ut-td-pink">登録・管理機能</td>
+              <td class="ut-td-muted">登録機能のみ（申請・承認含む）</td>
+            </tr>
+            <tr>
+              <td class="ut-td-feature">経営管理</td>
+              <td class="ut-td-pink">全社情報閲覧可</td>
+              <td class="ut-td-muted">スタッフ向け情報のみ閲覧可</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 導入効果（パネル） ===== -->
+  <section class="effects-section">
+    <div class="container">
+      <div class="section-header" style="text-align:center;margin-bottom:64px;">
+        <div class="section-badge">EFFECTS</div>
+        <h2 class="section-title">STRUCT導入で<span class="gradient-text">こう変わる</span></h2>
+        <p class="section-desc">導入企業の声をもとにした、リアルな変化です。</p>
+      </div>
+      <div class="effect-panels">
+        <div class="effect-panel" data-aos="fade-up">
+          <div class="effect-panel-num">01</div>
+          <span class="effect-panel-label">TIME SAVING</span>
+          <p class="effect-panel-title">プロジェクトスタッフがバックオフィス業務に費やす時間が<span class="accent">大幅に削減</span>されました。</p>
+        </div>
+        <div class="effect-panel" data-aos="fade-up" data-aos-delay="100">
+          <div class="effect-panel-num">02</div>
+          <span class="effect-panel-label">RESOURCE OPTIMIZATION</span>
+          <p class="effect-panel-title">バックオフィス業務に配置するスタッフ数を<span class="accent">削減</span>できるようになりました。</p>
+        </div>
+        <div class="effect-panel" data-aos="fade-up" data-aos-delay="200">
+          <div class="effect-panel-num">03</div>
+          <span class="effect-panel-label">PERFORMANCE UP</span>
+          <p class="effect-panel-title">稼働率や利益率などの指標管理が強化され、<span class="accent">財務パフォーマンスが向上</span>しました。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 導入フロー ===== -->
+  <section class="flow-section">
+    <div class="container">
+      <div class="section-header" style="text-align:center;margin-bottom:64px;">
+        <div class="section-badge">FLOW</div>
+        <h2 class="section-title">推奨<span class="gradient-text">導入フロー</span></h2>
+        <p class="section-desc">最短で業務改善を実感できるように設計されたステップです。</p>
+      </div>
+
+      <div class="flow-steps">
+        <div class="flow-step" data-aos="fade-up">
+          <div class="flow-num">01</div>
+          <h3>トライアル開始</h3>
+          <p>Webサイトからトライアルを申し込み。全機能を6ヶ月間無料でご利用いただけます。</p>
+        </div>
+        <div class="flow-step" data-aos="fade-up" data-aos-delay="100">
+          <div class="flow-num">02</div>
+          <h3>マスタデータ設定・<br>データ移行</h3>
+          <p>ユーザー・スタッフ・組織情報および顧客・協力会社・受発注情報を既存システムから登録します。</p>
+        </div>
+        <div class="flow-step" data-aos="fade-up" data-aos-delay="200">
+          <div class="flow-num">03</div>
+          <h3>業況確認・<br>テスト運用</h3>
+          <p>登録データをもとに業況・案件状況を確認。アサイン管理・販売管理・勤怠管理のテスト運用を行います。</p>
+        </div>
+        <div class="flow-step" data-aos="fade-up" data-aos-delay="300">
+          <div class="flow-num">04</div>
+          <h3>本格稼働</h3>
+          <p>テスト運用で問題がなければ、本格稼働を開始します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA（お問い合わせ / 申し込み） ===== -->
+  <section id="contact" class="contact-section section">
+    <div class="container">
+      <div class="contact-card" data-aos="fade-up">
+        <div class="contact-bg-orb contact-bg-orb-1"></div>
+        <div class="contact-bg-orb contact-bg-orb-2"></div>
+        <div class="contact-content">
+          <h2 class="contact-title">
+            今日から始める<br />
+            <span class="gradient-text-light">ビジネスを次のレベルへ</span>
+          </h2>
+          <p class="contact-desc">まずはお気軽にお問い合わせください。</p>
+          <div class="contact-ctas">
+            <a href="contact.html" class="btn btn-outline-white btn-lg">
+              <i class="fas fa-envelope"></i>
+              お問い合わせ
+            </a>
+            <a href="https://app.structapps.com/register1" class="btn btn-white btn-lg">
+              <i class="fas fa-rocket"></i>
+              今すぐ始める
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <svg width="36" height="36" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 2.83582C0 1.26964 1.26964 0 2.83582 0H35.1642C36.7304 0 38 1.26964 38 2.83582V35.1642C38 36.7304 36.7304 38 35.1642 38H2.83582C1.26964 38 0 36.7304 0 35.1642V2.83582Z" fill="url(#lg_ftr_p)"/><path d="M25.1413 15.6555H19.7272V13.9939C19.7272 13.2185 19.658 12.7246 19.5195 12.5123C19.3811 12.3 19.1503 12.1938 18.8272 12.1938C18.4764 12.1938 18.2087 12.3369 18.0241 12.6231C17.8487 12.9093 17.761 13.3431 17.761 13.9247C17.761 14.6724 17.8625 15.2355 18.0656 15.614C18.2595 15.9925 18.8087 16.4494 19.7134 16.9848C22.3074 18.5264 23.9413 19.7911 24.6151 20.7789C25.289 21.7666 25.626 23.359 25.626 25.556C25.626 27.153 25.4367 28.33 25.0582 29.0869C24.689 29.8439 23.969 30.4808 22.8981 30.9978C21.8273 31.5055 20.5811 31.7593 19.1595 31.7593C17.5994 31.7593 16.2655 31.4639 15.1578 30.8732C14.0593 30.2824 13.3393 29.53 12.9977 28.6161C12.6561 27.7022 12.4854 26.4053 12.4854 24.7252V23.2574H17.8995V25.9852C17.8995 26.8253 17.9733 27.3653 18.121 27.6053C18.2779 27.8453 18.5503 27.9653 18.938 27.9653C19.3257 27.9653 19.6118 27.813 19.7965 27.5084C19.9903 27.2038 20.0872 26.7514 20.0872 26.1514C20.0872 24.8313 19.9072 23.9682 19.5472 23.5621C19.178 23.1559 18.2687 22.4774 16.8194 21.5266C15.3701 20.5665 14.4101 19.8696 13.9393 19.4357C13.4685 19.0018 13.0762 18.4018 12.7623 17.6356C12.4577 16.8694 12.3054 15.8909 12.3054 14.7001C12.3054 12.9831 12.5223 11.7277 12.9562 10.9338C13.3993 10.1399 14.1101 9.52142 15.0886 9.07832C16.0671 8.62599 17.2487 8.39983 18.6333 8.39983C20.1473 8.39983 21.435 8.64445 22.4966 9.13371C23.5674 9.62296 24.2736 10.2414 24.6151 10.9892C24.9659 11.7277 25.1413 12.9877 25.1413 14.7693V15.6555Z" fill="white"/><defs><linearGradient id="lg_ftr_p" x1="0" y1="38" x2="38" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#EC4C86"/><stop offset="1" stop-color="#6152FF"/></linearGradient></defs></svg>
+            <span>STRUCT</span>
+          </a>
+          <p class="footer-tagline">あなたの業界を変革する<br>バーティカルSaaSソリューション</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>機能</h4>
+          <ul>
+            <li><a href="features/assignment-management.html">アサイン管理</a></li>
+            <li><a href="features/sales-management.html">販売管理</a></li>
+            <li><a href="features/purchase-management.html">購買管理</a></li>
+            <li><a href="features/attendance-expense-management.html">勤怠・経費管理</a></li>
+            <li><a href="features/approval-management.html">承認管理</a></li>
+            <li><a href="features/business-management.html">経営管理</a></li>
+            <li><a href="features/evaluation-management.html">評価管理</a></li>
+            <li><a href="features/information-management.html">情報管理</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>サービス</h4>
+          <ul>
+            <li><a href="pricing.html">価格</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>その他</h4>
+          <ul>
+            <li><a href="security-policy.html">情報セキュリティ方針</a></li>
+            <li><a href="privacy.html">プライバシーポリシー</a></li>
+            <li><a href="non-functional.html">非機能要件の対応</a></li>
+            <li><a href="trade.html">特定商取引法</a></li>
+            <li><a href="terms.html">利用規約</a></li>
+            <li><a href="https://www.jp-cartridge.com/" target="_blank" rel="noopener noreferrer">運営会社</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright © 2026 Cartridge Japan Corporation. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- Scripts (共通) -->
+  <script src="js/main.js?v=20260422b"></script>
+
+  <!-- Pricing page 固有スクリプト -->
+  <script>
+  // ===== コストシミュレーター（新仕様） =====
+  function updateSliderGradient(slider) {
+    const min = parseFloat(slider.min) || 0;
+    const max = parseFloat(slider.max) || 100;
+    const val = parseFloat(slider.value) || 0;
+    const pct = ((val - min) / (max - min) * 100).toFixed(1);
+    slider.style.setProperty('--val', pct + '%');
+  }
+
+  function calcSimulator() {
+    const bizUsers = parseInt(document.getElementById('simBizUsers').value) || 0;
+    const genUsers = parseInt(document.getElementById('simGenUsers').value) || 0;
+
+    // サポートプランの取得
+    const supportRadio = document.querySelector('input[name="supportPlan"]:checked');
+    const supportVal   = supportRadio ? supportRadio.value : '0';
+    let supportCost = 0;
+    if (supportVal === 'extra') {
+      const hours = parseInt(document.getElementById('extraHours').value) || 0;
+      supportCost = hours * 8000;
+    } else {
+      supportCost = parseInt(supportVal) || 0;
+    }
+
+    // 計算
+    const bizCost     = bizUsers * 2400;
+    const genCost     = genUsers * 600;
+    const monthlyTotal = bizCost + genCost + supportCost;
+
+    // ユーザー数表示
+    document.getElementById('bizUsersDisplay').innerHTML = bizUsers + '<span>名</span>';
+    document.getElementById('genUsersDisplay').innerHTML = genUsers + '<span>名</span>';
+
+    // スライダーグラデーション
+    updateSliderGradient(document.getElementById('simBizUsers'));
+    updateSliderGradient(document.getElementById('simGenUsers'));
+
+    // 結果表示
+    document.getElementById('simMonthlyResult').textContent = monthlyTotal.toLocaleString();
+    document.getElementById('simBizRow').textContent  = '¥' + bizCost.toLocaleString();
+    document.getElementById('simGenRow').textContent  = '¥' + genCost.toLocaleString();
+    document.getElementById('simSupportRow').textContent = '¥' + supportCost.toLocaleString();
+  }
+
+  // 有償サポート追加の時間入力エリア表示制御
+  function toggleExtraHours() {
+    const selected = document.querySelector('input[name="supportPlan"]:checked');
+    const wrap = document.getElementById('extraHoursWrap');
+    if (selected && selected.value === 'extra') {
+      wrap.classList.remove('disabled');
+    } else {
+      wrap.classList.add('disabled');
+    }
+    calcSimulator();
+  }
+
+  // ±ステッパーボタン
+  function makeStepperHandler(sliderId, delta) {
+    return function() {
+      const slider = document.getElementById(sliderId);
+      const newVal = Math.min(2000, Math.max(0, parseInt(slider.value) + delta));
+      slider.value = newVal;
+      slider.dispatchEvent(new Event('input'));
+    };
+  }
+  document.getElementById('bizUsersMinus').addEventListener('click', makeStepperHandler('simBizUsers', -1));
+  document.getElementById('bizUsersPlus').addEventListener('click',  makeStepperHandler('simBizUsers', +1));
+  document.getElementById('genUsersMinus').addEventListener('click', makeStepperHandler('simGenUsers', -1));
+  document.getElementById('genUsersPlus').addEventListener('click',  makeStepperHandler('simGenUsers', +1));
+
+  // イベント登録
+  ['simBizUsers','simGenUsers'].forEach(id => {
+    document.getElementById(id).addEventListener('input', calcSimulator);
+  });
+  document.querySelectorAll('input[name="supportPlan"]').forEach(radio => {
+    radio.addEventListener('change', toggleExtraHours);
+  });
+  document.getElementById('extraHours').addEventListener('input', calcSimulator);
+
+  // 初期計算
+  calcSimulator();
+
+  // ===== FAQ アコーディオン =====
+  document.querySelectorAll('.faq-question').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      // 他を閉じる
+      document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
+  // ===== スムーズスクロール（pricing-hero の #pricing-cards ボタン用） =====
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', e => {
+      const id = anchor.getAttribute('href');
+      if (id === '#') return;
+      const target = document.querySelector(id);
+      if (target) {
+        e.preventDefault();
+        window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' });
+      }
+    });
+  });
+  </script>
+
+  <!-- html2canvas + jsPDF（日本語PDF生成） -->
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+  <script>
+  /* ===== 見積書モーダル制御 ===== */
+  document.addEventListener('DOMContentLoaded', function () {
+  (function () {
+    const overlay  = document.getElementById('quoteModal');
+    const openBtn  = document.getElementById('openQuoteModal');
+    const closeBtn = document.getElementById('closeQuoteModal');
+    const cancelBtn= document.getElementById('cancelQuoteModal');
+    const form     = document.getElementById('quoteForm');
+    if (!overlay || !openBtn) return;
+
+    function openModal() {
+      overlay.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+      // 今日の翌月1日をデフォルトの利用開始日に設定
+      const today = new Date();
+      const nextMonth = new Date(today.getFullYear(), today.getMonth() + 1, 1);
+      const yyyy = nextMonth.getFullYear();
+      const mm   = String(nextMonth.getMonth() + 1).padStart(2,'0');
+      const dd   = String(nextMonth.getDate()).padStart(2,'0');
+      document.getElementById('qmStartDate').value = `${yyyy}-${mm}-${dd}`;
+    }
+    function closeModal() {
+      overlay.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+
+    openBtn.addEventListener('click', openModal);
+    closeBtn.addEventListener('click', closeModal);
+    cancelBtn.addEventListener('click', closeModal);
+    overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+    /* バリデーション */
+    function validateField(inputId, errId, label) {
+      const val = document.getElementById(inputId).value.trim();
+      const err = document.getElementById(errId);
+      const inp = document.getElementById(inputId);
+      if (!val) {
+        err.textContent = `${label}を入力してください`;
+        inp.classList.add('is-error');
+        return false;
+      }
+      err.textContent = '';
+      inp.classList.remove('is-error');
+      return true;
+    }
+
+    /* フォーム送信 → PDF生成 */
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const v1 = validateField('qmCompany',   'qmCompanyErr',   '会社名');
+      const v2 = validateField('qmPhone',     'qmPhoneErr',     '電話番号');
+      const v3 = validateField('qmZip',       'qmZipErr',       '郵便番号');
+      const v4 = validateField('qmAddress',   'qmAddressErr',   '会社住所');
+      const v5 = validateField('qmStartDate', 'qmStartDateErr', '利用開始日');
+      if (!v1 || !v2 || !v3 || !v4 || !v5) return;
+
+      const info = {
+        company  : document.getElementById('qmCompany').value.trim(),
+        phone    : document.getElementById('qmPhone').value.trim(),
+        zip      : document.getElementById('qmZip').value.trim(),
+        address  : document.getElementById('qmAddress').value.trim(),
+        startDate: document.getElementById('qmStartDate').value,
+      };
+
+      // ボタンをローディング状態に
+      const submitBtn = form.querySelector('.qm-btn-dl');
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 生成中...';
+
+      try {
+        await generateQuotePDF(info);
+        closeModal();
+      } catch(err) {
+        console.error(err);
+        alert('PDF生成中にエラーが発生しました。');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fas fa-file-download"></i> 見積書をダウンロード';
+      }
+    });
+
+    /* ===== PDF生成（html2canvas方式：日本語文字化けなし） ===== */
+    async function generateQuotePDF(info) {
+      const today = new Date();
+      const issueDate = `${today.getFullYear()}年${today.getMonth()+1}月${today.getDate()}日`;
+      const quoteNo   = 'Q' + today.getFullYear().toString().slice(2)
+                      + String(today.getMonth()+1).padStart(2,'0')
+                      + String(today.getDate()).padStart(2,'0')
+                      + '-' + String(Math.floor(Math.random()*9000)+1000);
+
+      const bizUsers  = parseInt(document.getElementById('simBizUsers').value) || 0;
+      const genUsers  = parseInt(document.getElementById('simGenUsers').value) || 0;
+      const bizCost   = bizUsers * 2400;
+      const genCost   = genUsers * 600;
+      const support   = document.querySelector('input[name="supportPlan"]:checked');
+      let   supportCost = 0, supportLabel = '基本サポート（無償）', supportUnit = '¥0', supportQty = '-';
+      if (support && support.value === '30000') {
+        supportCost = 30000; supportLabel = '有償サポート'; supportUnit = '¥30,000 /月'; supportQty = '1式';
+      } else if (support && support.value === 'extra') {
+        const hrs = parseInt(document.getElementById('extraHours').value) || 0;
+        supportCost = hrs * 8000; supportLabel = `有償サポート追加`; supportUnit = '¥8,000 /時間'; supportQty = `${hrs}時間`;
+      }
+      const monthly = bizCost + genCost + supportCost;
+      const annual  = monthly * 12;
+
+      /* ── 見積書HTMLを動的生成 ── */
+      const el = document.createElement('div');
+      el.id = 'quoteRenderTarget';
+      el.style.cssText = [
+        'position:fixed','top:-9999px','left:-9999px',
+        'width:794px','background:#fff',
+        'font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Meiryo",sans-serif',
+        'font-size:13px','color:#0f172a','line-height:1.6'
+      ].join(';');
+      el.innerHTML = `
+<div style="background:#9333ea;padding:12px 28px;display:flex;align-items:center;justify-content:space-between;">
+  <span style="color:#fff;font-size:15px;font-weight:900;letter-spacing:.05em;">STRUCT <span style="font-size:10px;font-weight:400;opacity:.75;">All in One ERP</span></span>
+  <span style="color:#fff;font-size:11px;opacity:.85;">株式会社Cartridge Japan</span>
+</div>
+<div style="padding:28px 36px 0;">
+  <div style="text-align:center;margin-bottom:6px;">
+    <span style="font-size:28px;font-weight:900;letter-spacing:.2em;border-bottom:2px solid #9333ea;padding-bottom:4px;">見 積 書</span>
+  </div>
+  <div style="text-align:right;font-size:11px;color:#64748b;margin-bottom:18px;">
+    <div>発行日：${issueDate}</div>
+    <div>見積番号：${quoteNo}</div>
+  </div>
+  <div style="display:flex;gap:12px;margin-bottom:20px;">
+    <div style="flex:1;background:#f8fafc;border-radius:8px;padding:14px 16px;border:1px solid #e2e8f0;">
+      <div style="font-size:10px;font-weight:700;color:#9333ea;margin-bottom:6px;">お客様情報</div>
+      <div style="font-size:14px;font-weight:700;margin-bottom:4px;">${escHtml(info.company)} 御中</div>
+      <div style="font-size:11px;color:#475569;">〒${escHtml(info.zip)}　${escHtml(info.address)}</div>
+      <div style="font-size:11px;color:#475569;">TEL：${escHtml(info.phone)}</div>
+      <div style="font-size:11px;color:#475569;">利用開始予定日：${formatDate(info.startDate)}</div>
+    </div>
+    <div style="flex:1;background:#f8fafc;border-radius:8px;padding:14px 16px;border:1px solid #e2e8f0;">
+      <div style="font-size:10px;font-weight:700;color:#9333ea;margin-bottom:6px;">発行者</div>
+      <div style="font-size:13px;font-weight:700;margin-bottom:4px;">株式会社Cartridge Japan</div>
+      <div style="font-size:11px;color:#475569;">〒104-0031 東京都中央区京橋1丁目1番5号</div>
+      <div style="font-size:11px;color:#475569;">セントラルビル5F</div>
+      <div style="font-size:11px;color:#475569;">TEL：03-6264-4555</div>
+      <div style="font-size:11px;color:#475569;">Email：info@jp-cartridge.com</div>
+    </div>
+  </div>
+  <table style="width:100%;border-collapse:collapse;margin-bottom:16px;font-size:12px;">
+    <thead>
+      <tr style="background:#9333ea;color:#fff;">
+        <th style="padding:9px 10px;text-align:left;font-weight:700;border-radius:0;">項目</th>
+        <th style="padding:9px 10px;text-align:right;font-weight:700;">単価</th>
+        <th style="padding:9px 10px;text-align:right;font-weight:700;">数量</th>
+        <th style="padding:9px 10px;text-align:right;font-weight:700;">金額（月額）</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background:#fff;">
+        <td style="padding:9px 10px;border-bottom:1px solid #e2e8f0;">業務ユーザー利用料</td>
+        <td style="padding:9px 10px;text-align:right;border-bottom:1px solid #e2e8f0;">¥2,400 /名・月</td>
+        <td style="padding:9px 10px;text-align:right;border-bottom:1px solid #e2e8f0;">${bizUsers}名</td>
+        <td style="padding:9px 10px;text-align:right;border-bottom:1px solid #e2e8f0;font-weight:600;">¥${bizCost.toLocaleString()}</td>
+      </tr>
+      <tr style="background:#f8fafc;">
+        <td style="padding:9px 10px;border-bottom:1px solid #e2e8f0;">一般ユーザー利用料</td>
+        <td style="padding:9px 10px;text-align:right;border-bottom:1px solid #e2e8f0;">¥600 /名・月</td>
+        <td style="padding:9px 10px;text-align:right;border-bottom:1px solid #e2e8f0;">${genUsers}名</td>
+        <td style="padding:9px 10px;text-align:right;border-bottom:1px solid #e2e8f0;font-weight:600;">¥${genCost.toLocaleString()}</td>
+      </tr>
+      <tr style="background:#fff;">
+        <td style="padding:9px 10px;border-bottom:1px solid #e2e8f0;">${escHtml(supportLabel)}</td>
+        <td style="padding:9px 10px;text-align:right;border-bottom:1px solid #e2e8f0;">${escHtml(supportUnit)}</td>
+        <td style="padding:9px 10px;text-align:right;border-bottom:1px solid #e2e8f0;">${escHtml(supportQty)}</td>
+        <td style="padding:9px 10px;text-align:right;border-bottom:1px solid #e2e8f0;font-weight:600;">¥${supportCost.toLocaleString()}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div style="display:flex;justify-content:flex-end;margin-bottom:16px;">
+    <div style="text-align:right;">
+      <div style="font-size:11px;color:#64748b;margin-bottom:2px;">月額合計（税込概算）</div>
+      <div style="font-size:26px;font-weight:900;color:#9333ea;">¥${monthly.toLocaleString()}<span style="font-size:13px;font-weight:600;color:#64748b;"> / 月</span></div>
+      <div style="font-size:11px;color:#64748b;">年額換算：¥${annual.toLocaleString()} / 年</div>
+    </div>
+  </div>
+  <div style="background:#f0fdf4;border-radius:8px;padding:10px 14px;margin-bottom:14px;border:1px solid #bbf7d0;font-size:12px;color:#059669;font-weight:600;">
+    ★ 最初の6か月間は無料でご利用いただけます（導入支援期間）
+  </div>
+  <div style="font-size:10px;color:#94a3b8;line-height:1.8;">
+    <div>※ 本見積書は概算です。最終的な費用は契約内容によって異なる場合があります。</div>
+    <div>※ 表示金額は税込概算です。</div>
+    <div>※ 本見積書の有効期限は発行日より30日間です。</div>
+    <div>※ これは30日間の月を基準とした基準金額です。</div>
+  </div>
+</div>
+<div style="background:#9333ea;margin-top:24px;padding:10px 28px;text-align:center;font-size:10px;color:rgba(255,255,255,.8);">
+  STRUCT – All in One ERP ｜ https://structapps.com
+</div>`;
+
+      document.body.appendChild(el);
+
+      try {
+        const canvas = await html2canvas(el, { scale: 2, useCORS: true, backgroundColor: '#ffffff' });
+        const imgData = canvas.toDataURL('image/png');
+        const { jsPDF } = window.jspdf;
+        const pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+        const pdfW = pdf.internal.pageSize.getWidth();
+        const pdfH = pdf.internal.pageSize.getHeight();
+        const ratio = canvas.height / canvas.width;
+        const imgH  = pdfW * ratio;
+        if (imgH <= pdfH) {
+          pdf.addImage(imgData, 'PNG', 0, 0, pdfW, imgH);
+        } else {
+          // 複数ページ対応
+          let yPos = 0;
+          while (yPos < canvas.height) {
+            const sliceH = Math.min(canvas.height - yPos, Math.floor(canvas.width * pdfH / pdfW));
+            const sliceCanvas = document.createElement('canvas');
+            sliceCanvas.width  = canvas.width;
+            sliceCanvas.height = sliceH;
+            sliceCanvas.getContext('2d').drawImage(canvas, 0, yPos, canvas.width, sliceH, 0, 0, canvas.width, sliceH);
+            if (yPos > 0) pdf.addPage();
+            pdf.addImage(sliceCanvas.toDataURL('image/png'), 'PNG', 0, 0, pdfW, sliceH * pdfW / canvas.width);
+            yPos += sliceH;
+          }
+        }
+        const fname = `STRUCT見積書_${info.company}_${issueDate.replace(/[年月日]/g,'')}.pdf`;
+        pdf.save(fname);
+      } finally {
+        document.body.removeChild(el);
+      }
+    }
+
+    /* HTML特殊文字エスケープ */
+    function escHtml(str) {
+      return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    /* 日付フォーマット補助 */
+    function formatDate(dateStr) {
+      if (!dateStr) return '';
+      const [y, m, d] = dateStr.split('-');
+      return `${y}年${parseInt(m)}月${parseInt(d)}日`;
+    }
+  })();
+  }); // DOMContentLoaded
+  </script>
+<!-- ===== 見積書ダウンロード モーダル ===== -->
+<div id="quoteModal" class="qm-overlay" role="dialog" aria-modal="true" aria-labelledby="qmTitle" style="display:none;">
+  <div class="qm-box">
+    <div class="qm-header">
+      <div class="qm-header-icon"><i class="fas fa-file-invoice"></i></div>
+      <div>
+        <div class="qm-title" id="qmTitle">見積書の発行</div>
+        <div class="qm-subtitle">以下の情報を入力して見積書をダウンロードしてください</div>
+      </div>
+      <button class="qm-close" id="closeQuoteModal" aria-label="閉じる"><i class="fas fa-times"></i></button>
+    </div>
+
+    <form id="quoteForm" novalidate>
+      <div class="qm-form-grid">
+        <div class="qm-field qm-field--full">
+          <label class="qm-label" for="qmCompany">会社名 <span class="qm-req">必須</span></label>
+          <input class="qm-input" type="text" id="qmCompany" placeholder="例：株式会社〇〇" required />
+          <div class="qm-err" id="qmCompanyErr"></div>
+        </div>
+        <div class="qm-field">
+          <label class="qm-label" for="qmPhone">電話番号 <span class="qm-req">必須</span></label>
+          <input class="qm-input" type="tel" id="qmPhone" placeholder="例：03-0000-0000" required />
+          <div class="qm-err" id="qmPhoneErr"></div>
+        </div>
+        <div class="qm-field">
+          <label class="qm-label" for="qmZip">郵便番号 <span class="qm-req">必須</span></label>
+          <input class="qm-input" type="text" id="qmZip" placeholder="例：104-0031" required />
+          <div class="qm-err" id="qmZipErr"></div>
+        </div>
+        <div class="qm-field qm-field--full">
+          <label class="qm-label" for="qmAddress">会社住所 <span class="qm-req">必須</span></label>
+          <input class="qm-input" type="text" id="qmAddress" placeholder="例：東京都中央区京橋1丁目1番5号 セントラルビル5F" required />
+          <div class="qm-err" id="qmAddressErr"></div>
+        </div>
+        <div class="qm-field">
+          <label class="qm-label" for="qmStartDate">利用開始日 <span class="qm-req">必須</span></label>
+          <input class="qm-input" type="date" id="qmStartDate" required />
+          <div class="qm-err" id="qmStartDateErr"></div>
+        </div>
+      </div>
+
+      <div class="qm-actions">
+        <button type="button" class="qm-btn-cancel" id="cancelQuoteModal">キャンセル</button>
+        <button type="submit" class="qm-btn-dl">
+          <i class="fas fa-file-download"></i> 見積書をダウンロード
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<style>
+/* ===== 見積書モーダル ===== */
+.qm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15,23,42,0.55);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: qmFadeIn 0.2s ease;
+}
+@keyframes qmFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.qm-box {
+  background: #fff;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 560px;
+  box-shadow: 0 24px 80px rgba(147,51,234,0.2), 0 4px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  animation: qmSlideUp 0.25s ease;
+}
+@keyframes qmSlideUp {
+  from { transform: translateY(24px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+.qm-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 24px 28px 20px;
+  border-bottom: 1px solid #f1f5f9;
+}
+.qm-header-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #9333ea, #c026d3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.qm-title {
+  font-size: 17px;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.2;
+}
+.qm-subtitle {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 3px;
+}
+.qm-close {
+  margin-left: auto;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  background: #f1f5f9;
+  color: #64748b;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.15s;
+}
+.qm-close:hover { background: #e2e8f0; color: #0f172a; }
+.qm-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 24px 28px 8px;
+}
+.qm-field { display: flex; flex-direction: column; gap: 5px; }
+.qm-field--full { grid-column: 1 / -1; }
+.qm-label {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #374151;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.qm-req {
+  font-size: 10px;
+  font-weight: 700;
+  color: #fff;
+  background: #9333ea;
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+.qm-input {
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 10px 13px;
+  font-size: 14px;
+  color: #0f172a;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  font-family: inherit;
+  background: #fafafa;
+}
+.qm-input:focus {
+  border-color: #9333ea;
+  box-shadow: 0 0 0 3px rgba(147,51,234,0.12);
+  background: #fff;
+}
+.qm-input.is-error {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239,68,68,0.1);
+}
+.qm-err {
+  font-size: 11px;
+  color: #ef4444;
+  min-height: 14px;
+}
+.qm-actions {
+  display: flex;
+  gap: 12px;
+  padding: 20px 28px 28px;
+  justify-content: flex-end;
+}
+.qm-btn-cancel {
+  padding: 11px 22px;
+  border-radius: 10px;
+  border: 1.5px solid #e2e8f0;
+  background: #fff;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+  font-family: inherit;
+}
+.qm-btn-cancel:hover { background: #f8fafc; }
+.qm-btn-dl {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 24px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #9333ea, #c026d3);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  box-shadow: 0 4px 16px rgba(147,51,234,0.35);
+  font-family: inherit;
+}
+.qm-btn-dl:hover { transform: translateY(-1px); box-shadow: 0 6px 22px rgba(147,51,234,0.45); }
+@media (max-width: 560px) {
+  .qm-form-grid { grid-template-columns: 1fr; }
+  .qm-field--full { grid-column: 1; }
+  .qm-header, .qm-form-grid, .qm-actions { padding-left: 18px; padding-right: 18px; }
+}
+</style>
+</body>
+</html>

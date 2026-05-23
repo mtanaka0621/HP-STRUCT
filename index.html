@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STRUCT - All in One ERP</title>
+  <meta name="description" content="STRUCTはIT企業のバックオフィスビジネスプロセス全てを統合管理するワンストップソリューションです。" />
+  <link rel="icon" href="images/struct_logo.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css?v=20260522a" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <!-- ロゴ -->
+      <a href="#" class="nav-logo">
+        <svg class="logo-icon" width="34" height="34" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 2.83582C0 1.26964 1.26964 0 2.83582 0H35.1642C36.7304 0 38 1.26964 38 2.83582V35.1642C38 36.7304 36.7304 38 35.1642 38H2.83582C1.26964 38 0 36.7304 0 35.1642V2.83582Z" fill="url(#lg_hdr)"/><path d="M25.1413 15.6555H19.7272V13.9939C19.7272 13.2185 19.658 12.7246 19.5195 12.5123C19.3811 12.3 19.1503 12.1938 18.8272 12.1938C18.4764 12.1938 18.2087 12.3369 18.0241 12.6231C17.8487 12.9093 17.761 13.3431 17.761 13.9247C17.761 14.6724 17.8625 15.2355 18.0656 15.614C18.2595 15.9925 18.8087 16.4494 19.7134 16.9848C22.3074 18.5264 23.9413 19.7911 24.6151 20.7789C25.289 21.7666 25.626 23.359 25.626 25.556C25.626 27.153 25.4367 28.33 25.0582 29.0869C24.689 29.8439 23.969 30.4808 22.8981 30.9978C21.8273 31.5055 20.5811 31.7593 19.1595 31.7593C17.5994 31.7593 16.2655 31.4639 15.1578 30.8732C14.0593 30.2824 13.3393 29.53 12.9977 28.6161C12.6561 27.7022 12.4854 26.4053 12.4854 24.7252V23.2574H17.8995V25.9852C17.8995 26.8253 17.9733 27.3653 18.121 27.6053C18.2779 27.8453 18.5503 27.9653 18.938 27.9653C19.3257 27.9653 19.6118 27.813 19.7965 27.5084C19.9903 27.2038 20.0872 26.7514 20.0872 26.1514C20.0872 24.8313 19.9072 23.9682 19.5472 23.5621C19.178 23.1559 18.2687 22.4774 16.8194 21.5266C15.3701 20.5665 14.4101 19.8696 13.9393 19.4357C13.4685 19.0018 13.0762 18.4018 12.7623 17.6356C12.4577 16.8694 12.3054 15.8909 12.3054 14.7001C12.3054 12.9831 12.5223 11.7277 12.9562 10.9338C13.3993 10.1399 14.1101 9.52142 15.0886 9.07832C16.0671 8.62599 17.2487 8.39983 18.6333 8.39983C20.1473 8.39983 21.435 8.64445 22.4966 9.13371C23.5674 9.62296 24.2736 10.2414 24.6151 10.9892C24.9659 11.7277 25.1413 12.9877 25.1413 14.7693V15.6555Z" fill="white"/><defs><linearGradient id="lg_hdr" x1="0" y1="38" x2="38" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#EC4C86"/><stop offset="1" stop-color="#6152FF"/></linearGradient></defs></svg>
+        <span class="logo-text">STRUCT</span>
+      </a>
+
+      <!-- PC用メニュー -->
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item has-dropdown">
+          <a class="nav-link">
+            機能 <i class="fas fa-chevron-down nav-arrow"></i>
+          </a>
+          <div class="dropdown-menu">
+            <div class="dropdown-header">
+              <span class="dropdown-header-label">Features</span>
+              <span class="dropdown-header-count">8 Modules</span>
+            </div>
+            <div class="dropdown-grid">
+              <a href="features/assignment-management.html" class="dropdown-item dropdown-item--assign">
+                <i class="fas fa-users dropdown-icon"></i>
+                <div class="dropdown-text">
+                  <div class="dropdown-title">アサイン管理</div>
+                  <div class="dropdown-desc">スタッフ稼働を可視化</div>
+                </div>
+                <i class="fas fa-arrow-right dropdown-arrow"></i>
+              </a>
+              <a href="features/sales-management.html" class="dropdown-item dropdown-item--sales">
+                <i class="fas fa-chart-line dropdown-icon"></i>
+                <div class="dropdown-text">
+                  <div class="dropdown-title">販売管理</div>
+                  <div class="dropdown-desc">受注から債権まで一気通貫</div>
+                </div>
+                <i class="fas fa-arrow-right dropdown-arrow"></i>
+              </a>
+              <a href="features/purchase-management.html" class="dropdown-item dropdown-item--purchase">
+                <i class="fas fa-shopping-cart dropdown-icon"></i>
+                <div class="dropdown-text">
+                  <div class="dropdown-title">購買管理</div>
+                  <div class="dropdown-desc">外注・購買フローを最適化</div>
+                </div>
+                <i class="fas fa-arrow-right dropdown-arrow"></i>
+              </a>
+              <a href="features/attendance-expense-management.html" class="dropdown-item dropdown-item--attendance">
+                <i class="fas fa-clock dropdown-icon"></i>
+                <div class="dropdown-text">
+                  <div class="dropdown-title">勤怠・経費管理</div>
+                  <div class="dropdown-desc">打刻から精算までシームレス</div>
+                </div>
+                <i class="fas fa-arrow-right dropdown-arrow"></i>
+              </a>
+              <a href="features/approval-management.html" class="dropdown-item dropdown-item--approval">
+                <i class="fas fa-stamp dropdown-icon"></i>
+                <div class="dropdown-text">
+                  <div class="dropdown-title">承認管理</div>
+                  <div class="dropdown-desc">申請ワークフローを標準化</div>
+                </div>
+                <i class="fas fa-arrow-right dropdown-arrow"></i>
+              </a>
+              <a href="features/business-management.html" class="dropdown-item dropdown-item--business">
+                <i class="fas fa-tachometer-alt dropdown-icon"></i>
+                <div class="dropdown-text">
+                  <div class="dropdown-title">経営管理</div>
+                  <div class="dropdown-desc">組織の予実をリアルタイム把握</div>
+                </div>
+                <i class="fas fa-arrow-right dropdown-arrow"></i>
+              </a>
+              <a href="features/evaluation-management.html" class="dropdown-item dropdown-item--evaluation">
+                <i class="fas fa-star dropdown-icon"></i>
+                <div class="dropdown-text">
+                  <div class="dropdown-title">評価管理</div>
+                  <div class="dropdown-desc">人事評価プロセスを体系化</div>
+                </div>
+                <i class="fas fa-arrow-right dropdown-arrow"></i>
+              </a>
+              <a href="features/information-management.html" class="dropdown-item dropdown-item--information">
+                <i class="fas fa-info-circle dropdown-icon"></i>
+                <div class="dropdown-text">
+                  <div class="dropdown-title">情報管理</div>
+                  <div class="dropdown-desc">組織のナレッジを一元集約</div>
+                </div>
+                <i class="fas fa-arrow-right dropdown-arrow"></i>
+              </a>
+            </div>
+            <div class="dropdown-footer">
+              <a href="#features" class="dropdown-footer-link">すべての機能を見る <i class="fas fa-arrow-right"></i></a>
+              <span class="dropdown-footer-note">All in One ERP</span>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="pricing.html" class="nav-link">価格</a>
+        </li>
+        <li class="nav-item">
+          <a href="faq.html" class="nav-link">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">お問い合わせ</a>
+        </li>
+      </ul>
+
+      <!-- PC用アクション -->
+      <div class="nav-actions">
+        <a href="https://app.structapps.com/register1" class="btn btn-primary">今すぐ始める</a>
+        <a href="https://app.structapps.com" class="btn btn-ghost">ログイン</a>
+        <button class="btn btn-ghost nav-lang-btn" onclick="alert('言語切替は準備中です')">
+          <i class="fas fa-globe"></i> JP
+        </button>
+      </div>
+
+      <!-- ハンバーガーボタン（モバイルのみ表示） -->
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== モバイルメニュー（nav外に独立配置） ===== -->
+  <div class="sp-menu" id="spMenu" aria-hidden="true">
+    <!-- メニューヘッダー -->
+    <div class="sp-menu-header">
+      <div class="sp-menu-logo">
+        <svg width="28" height="28" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 2.83582C0 1.26964 1.26964 0 2.83582 0H35.1642C36.7304 0 38 1.26964 38 2.83582V35.1642C38 36.7304 36.7304 38 35.1642 38H2.83582C1.26964 38 0 36.7304 0 35.1642V2.83582Z" fill="url(#lg_sp)"/><path d="M25.1413 15.6555H19.7272V13.9939C19.7272 13.2185 19.658 12.7246 19.5195 12.5123C19.3811 12.3 19.1503 12.1938 18.8272 12.1938C18.4764 12.1938 18.2087 12.3369 18.0241 12.6231C17.8487 12.9093 17.761 13.3431 17.761 13.9247C17.761 14.6724 17.8625 15.2355 18.0656 15.614C18.2595 15.9925 18.8087 16.4494 19.7134 16.9848C22.3074 18.5264 23.9413 19.7911 24.6151 20.7789C25.289 21.7666 25.626 23.359 25.626 25.556C25.626 27.153 25.4367 28.33 25.0582 29.0869C24.689 29.8439 23.969 30.4808 22.8981 30.9978C21.8273 31.5055 20.5811 31.7593 19.1595 31.7593C17.5994 31.7593 16.2655 31.4639 15.1578 30.8732C14.0593 30.2824 13.3393 29.53 12.9977 28.6161C12.6561 27.7022 12.4854 26.4053 12.4854 24.7252V23.2574H17.8995V25.9852C17.8995 26.8253 17.9733 27.3653 18.121 27.6053C18.2779 27.8453 18.5503 27.9653 18.938 27.9653C19.3257 27.9653 19.6118 27.813 19.7965 27.5084C19.9903 27.2038 20.0872 26.7514 20.0872 26.1514C20.0872 24.8313 19.9072 23.9682 19.5472 23.5621C19.178 23.1559 18.2687 22.4774 16.8194 21.5266C15.3701 20.5665 14.4101 19.8696 13.9393 19.4357C13.4685 19.0018 13.0762 18.4018 12.7623 17.6356C12.4577 16.8694 12.3054 15.8909 12.3054 14.7001C12.3054 12.9831 12.5223 11.7277 12.9562 10.9338C13.3993 10.1399 14.1101 9.52142 15.0886 9.07832C16.0671 8.62599 17.2487 8.39983 18.6333 8.39983C20.1473 8.39983 21.435 8.64445 22.4966 9.13371C23.5674 9.62296 24.2736 10.2414 24.6151 10.9892C24.9659 11.7277 25.1413 12.9877 25.1413 14.7693V15.6555Z" fill="white"/><defs><linearGradient id="lg_sp" x1="0" y1="38" x2="38" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#EC4C86"/><stop offset="1" stop-color="#6152FF"/></linearGradient></defs></svg>
+        <span>STRUCT</span>
+      </div>
+      <button class="sp-menu-close" id="spMenuClose" aria-label="メニューを閉じる">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <!-- メニュー本体 -->
+    <div class="sp-menu-body">
+      <!-- 機能（アコーディオン） -->
+      <div class="sp-menu-item sp-has-sub" id="spFeatureItem">
+        <button class="sp-menu-link sp-menu-link--accordion" id="spFeatureBtn">
+          機能 <i class="fas fa-chevron-down sp-arrow"></i>
+        </button>
+        <div class="sp-submenu" id="spFeatureSub">
+          <a href="features/assignment-management.html" class="sp-submenu-item"><i class="fas fa-users"></i> アサイン管理</a>
+          <a href="features/sales-management.html" class="sp-submenu-item"><i class="fas fa-chart-line"></i> 販売管理</a>
+          <a href="features/purchase-management.html" class="sp-submenu-item"><i class="fas fa-shopping-cart"></i> 購買管理</a>
+          <a href="features/attendance-expense-management.html" class="sp-submenu-item"><i class="fas fa-clock"></i> 勤怠・経費管理</a>
+          <a href="features/approval-management.html" class="sp-submenu-item"><i class="fas fa-stamp"></i> 承認管理</a>
+          <a href="features/business-management.html" class="sp-submenu-item"><i class="fas fa-tachometer-alt"></i> 経営管理</a>
+          <a href="features/evaluation-management.html" class="sp-submenu-item"><i class="fas fa-star"></i> 評価管理</a>
+          <a href="features/information-management.html" class="sp-submenu-item"><i class="fas fa-info-circle"></i> 情報管理</a>
+        </div>
+      </div>
+      <div class="sp-menu-item">
+        <a href="pricing.html" class="sp-menu-link">料金</a>
+      </div>
+      <div class="sp-menu-item">
+        <a href="faq.html" class="sp-menu-link">FAQ</a>
+      </div>
+      <div class="sp-menu-item">
+        <a href="contact.html" class="sp-menu-link">お問い合わせ</a>
+      </div>
+    </div>
+
+    <!-- フッターCTA -->
+    <div class="sp-menu-footer">
+      <a href="https://app.structapps.com/register1" class="sp-menu-cta sp-menu-cta--primary">今すぐ始める</a>
+      <a href="https://app.structapps.com" class="sp-menu-cta sp-menu-cta--ghost">ログイン</a>
+    </div>
+  </div>
+
+  <!-- モバイルオーバーレイ -->
+  <div class="sp-overlay" id="spOverlay"></div>
+
+  <!-- ===== SKY STAGE: HERO + ASSIGN を空背景で一体化 ===== -->
+  <div class="sky-stage">
+
+    <!-- 空の背景（ヒーロー〜アサインまでをひとつの空で覆う） -->
+    <div class="sky-stage-bg" aria-hidden="true">
+      <canvas id="heroCanvas"></canvas>
+      <div class="hero-sun-glow"></div>
+    </div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero" class="hero-section">
+
+    <div id="heroClickLayer"></div>
+
+    <div class="hero-content container">
+
+      <!-- Left column -->
+      <div class="hero-left">
+
+        <div class="hero-badge hero-badge--new animate-in" style="--delay:0s">
+          <span class="badge-dot"></span>
+          <span class="badge-label">バーティカル SaaS</span>
+          <span class="badge-ver">v2.0 公開中</span>
+        </div>
+
+        <h1 class="hero-title animate-in" style="--delay:0.1s">
+          <span class="ht-line ht-line-1">全てが</span>
+          <span class="ht-line ht-line-2 gradient-text" id="heroTypeTarget">統合された</span>
+          <span class="ht-line ht-line-3">世界へ。</span>
+        </h1>
+
+        <div class="hero-subtitle-block animate-in" style="--delay:0.18s">
+          <span class="hero-subtitle-text">IT企業向け業務管理システム</span>
+        </div>
+
+        <p class="hero-description animate-in" style="--delay:0.25s">
+          STRUCTはIT企業の管理に必要な<strong>すべての機能を統合した</strong>
+          オールインワンパッケージです。すべての機能が統合されることにより、分断されたシステムへ多重入力するような業務の煩雑さから解放され、さらに経営状況全体の見える化が実現されます。
+        </p>
+
+        <div class="hero-tags animate-in" style="--delay:0.35s">
+          <span class="htag"><i class="fas fa-laptop-code"></i> IT企業</span>
+          <span class="htag"><i class="fas fa-chart-bar"></i> コンサルティング企業</span>
+          <span class="htag"><i class="fas fa-palette"></i> クリエイティブ企業</span>
+        </div>
+
+        <div class="hero-ctas animate-in" style="--delay:0.45s">
+          <a href="#features" class="btn-hero-ghost">
+            <i class="fas fa-play-circle"></i>
+            <span>機能を見る</span>
+          </a>
+        </div>
+
+      </div><!-- /hero-left -->
+
+      <!-- Right column -->
+      <div class="hero-right animate-in" style="--delay:0.3s">
+        <div class="hero-3d-wrap" id="hero3dWrap">
+          <div class="siv-wrap">
+
+            <canvas class="siv-canvas" id="sivCanvas"></canvas>
+
+            <div class="siv-core" id="sivCore">
+              <div class="siv-core-ring siv-core-ring--1"></div>
+              <div class="siv-core-ring siv-core-ring--2"></div>
+              <div class="siv-core-inner">
+                <!-- ロゴアイコンのみ（テキスト削除・背景透明） -->
+                <svg class="siv-core-logo" width="52" height="52" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 2.83582C0 1.26964 1.26964 0 2.83582 0H35.1642C36.7304 0 38 1.26964 38 2.83582V35.1642C38 36.7304 36.7304 38 35.1642 38H2.83582C1.26964 38 0 36.7304 0 35.1642V2.83582Z" fill="url(#siv_logo_grad)"/>
+                  <path d="M25.1413 15.6555H19.7272V13.9939C19.7272 13.2185 19.658 12.7246 19.5195 12.5123C19.3811 12.3 19.1503 12.1938 18.8272 12.1938C18.4764 12.1938 18.2087 12.3369 18.0241 12.6231C17.8487 12.9093 17.761 13.3431 17.761 13.9247C17.761 14.6724 17.8625 15.2355 18.0656 15.614C18.2595 15.9925 18.8087 16.4494 19.7134 16.9848C22.3074 18.5264 23.9413 19.7911 24.6151 20.7789C25.289 21.7666 25.626 23.359 25.626 25.556C25.626 27.153 25.4367 28.33 25.0582 29.0869C24.689 29.8439 23.969 30.4808 22.8981 30.9978C21.8273 31.5055 20.5811 31.7593 19.1595 31.7593C17.5994 31.7593 16.2655 31.4639 15.1578 30.8732C14.0593 30.2824 13.3393 29.53 12.9977 28.6161C12.6561 27.7022 12.4854 26.4053 12.4854 24.7252V23.2574H17.8995V25.9852C17.8995 26.8253 17.9733 27.3653 18.121 27.6053C18.2779 27.8453 18.5503 27.9653 18.938 27.9653C19.3257 27.9653 19.6118 27.813 19.7965 27.5084C19.9903 27.2038 20.0872 26.7514 20.0872 26.1514C20.0872 24.8313 19.9072 23.9682 19.5472 23.5621C19.178 23.1559 18.2687 22.4774 16.8194 21.5266C15.3701 20.5665 14.4101 19.8696 13.9393 19.4357C13.4685 19.0018 13.0762 18.4018 12.7623 17.6356C12.4577 16.8694 12.3054 15.8909 12.3054 14.7001C12.3054 12.9831 12.5223 11.7277 12.9562 10.9338C13.3993 10.1399 14.1101 9.52142 15.0886 9.07832C16.0671 8.62599 17.2487 8.39983 18.6333 8.39983C20.1473 8.39983 21.435 8.64445 22.4966 9.13371C23.5674 9.62296 24.2736 10.2414 24.6151 10.9892C24.9659 11.7277 25.1413 12.9877 25.1413 14.7693V15.6555Z" fill="white"/>
+                  <defs>
+                    <linearGradient id="siv_logo_grad" x1="0" y1="38" x2="38" y2="0" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#EC4C86"/>
+                      <stop offset="1" stop-color="#6152FF"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+
+            <div class="siv-col siv-col--left">
+              <div class="siv-card" id="sivCard1" style="--cc:#EC4C86;--cd:0.0s">
+                <div class="siv-card-icon"><i class="fas fa-users"></i></div>
+                <div class="siv-card-body">
+                  <div class="siv-card-name">アサイン管理</div>
+                  <div class="siv-card-bar"><div class="siv-card-fill" style="--fw:82%"></div></div>
+                  <div class="siv-card-meta">稼働率 <b>82%</b></div>
+                </div>
+                <div class="siv-card-pulse"></div>
+              </div>
+              <div class="siv-card" id="sivCard2" style="--cc:#6152FF;--cd:0.15s">
+                <div class="siv-card-icon"><i class="fas fa-chart-line"></i></div>
+                <div class="siv-card-body">
+                  <div class="siv-card-name">販売管理</div>
+                  <div class="siv-card-bar"><div class="siv-card-fill" style="--fw:67%"></div></div>
+                  <div class="siv-card-meta">今月 <b>¥147M</b></div>
+                </div>
+                <div class="siv-card-pulse"></div>
+              </div>
+              <div class="siv-card" id="sivCard3" style="--cc:#14b8a6;--cd:0.3s">
+                <div class="siv-card-icon"><i class="fas fa-shopping-cart"></i></div>
+                <div class="siv-card-body">
+                  <div class="siv-card-name">購買管理</div>
+                  <div class="siv-card-bar"><div class="siv-card-fill" style="--fw:54%"></div></div>
+                  <div class="siv-card-meta">承認待ち <b>3件</b></div>
+                </div>
+                <div class="siv-card-pulse"></div>
+              </div>
+            </div>
+
+            <div class="siv-col siv-col--right">
+              <div class="siv-card" id="sivCard4" style="--cc:#f97316;--cd:0.45s">
+                <div class="siv-card-icon"><i class="fas fa-clock"></i></div>
+                <div class="siv-card-body">
+                  <div class="siv-card-name">勤怠・経費</div>
+                  <div class="siv-card-bar"><div class="siv-card-fill" style="--fw:91%"></div></div>
+                  <div class="siv-card-meta">申請済 <b>91%</b></div>
+                </div>
+                <div class="siv-card-pulse"></div>
+              </div>
+              <div class="siv-card" id="sivCard5" style="--cc:#a855f7;--cd:0.6s">
+                <div class="siv-card-icon"><i class="fas fa-star"></i></div>
+                <div class="siv-card-body">
+                  <div class="siv-card-name">評価管理</div>
+                  <div class="siv-card-bar"><div class="siv-card-fill" style="--fw:73%"></div></div>
+                  <div class="siv-card-meta">完了率 <b>73%</b></div>
+                </div>
+                <div class="siv-card-pulse"></div>
+              </div>
+              <div class="siv-card" id="sivCard6" style="--cc:#22c55e;--cd:0.75s">
+                <div class="siv-card-icon"><i class="fas fa-stamp"></i></div>
+                <div class="siv-card-body">
+                  <div class="siv-card-name">承認管理</div>
+                  <div class="siv-card-bar"><div class="siv-card-fill" style="--fw:100%"></div></div>
+                  <div class="siv-card-meta">本日 <b>12件</b> 完了</div>
+                </div>
+                <div class="siv-card-pulse"></div>
+              </div>
+            </div>
+
+            <div class="siv-bottom" id="sivBottom" style="--cd:0.9s">
+              <!-- ヘッダー行 -->
+              <div class="siv-db-header">
+                <span class="siv-db-title"><i class="fas fa-chart-line"></i> 経営ダッシュボード</span>
+                <span class="siv-db-live"><span class="siv-db-dot"></span>LIVE</span>
+              </div>
+              <!-- KPIカード3枚 -->
+              <div class="siv-db-kpis">
+                <div class="siv-db-kpi" style="--kc:#EC4C86">
+                  <div class="siv-db-kpi-label"><i class="fas fa-yen-sign"></i> 売上</div>
+                  <div class="siv-db-kpi-val"><span id="sivKv1">0</span><span class="siv-db-kpi-unit">億円</span></div>
+                  <div class="siv-db-kpi-bar"><div class="siv-db-kpi-fill" style="--bw:78%"></div></div>
+                  <div class="siv-db-kpi-change"><i class="fas fa-arrow-up"></i> +12.4% YoY</div>
+                </div>
+                <div class="siv-db-kpi" style="--kc:#a855f7">
+                  <div class="siv-db-kpi-label"><i class="fas fa-users"></i> 社員数</div>
+                  <div class="siv-db-kpi-val"><span id="sivKv2">0</span><span class="siv-db-kpi-unit">名</span></div>
+                  <div class="siv-db-kpi-bar"><div class="siv-db-kpi-fill" style="--bw:62%"></div></div>
+                  <div class="siv-db-kpi-change"><i class="fas fa-arrow-up"></i> +8.3% YoY</div>
+                </div>
+                <div class="siv-db-kpi" style="--kc:#6152FF">
+                  <div class="siv-db-kpi-label"><i class="fas fa-tag"></i> 平均単価</div>
+                  <div class="siv-db-kpi-val"><span id="sivKv3">0</span><span class="siv-db-kpi-unit">万円</span></div>
+                  <div class="siv-db-kpi-bar"><div class="siv-db-kpi-fill" style="--bw:88%"></div></div>
+                  <div class="siv-db-kpi-change"><i class="fas fa-arrow-up"></i> +5.1% YoY</div>
+                </div>
+              </div>
+              <!-- ミニグラフ -->
+              <div class="siv-db-chart-wrap">
+                <div class="siv-db-chart-label">売上推移（月次）</div>
+                <svg class="siv-db-chart" viewBox="0 0 260 44" preserveAspectRatio="none">
+                  <defs>
+                    <linearGradient id="dbGrad" x1="0" y1="0" x2="1" y2="0">
+                      <stop offset="0%" stop-color="#EC4C86"/>
+                      <stop offset="50%" stop-color="#a855f7"/>
+                      <stop offset="100%" stop-color="#6152FF"/>
+                    </linearGradient>
+                    <linearGradient id="dbFill" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.35"/>
+                      <stop offset="100%" stop-color="#6152FF" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <!-- グリッド横線 -->
+                  <line x1="0" y1="11" x2="260" y2="11" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+                  <line x1="0" y1="22" x2="260" y2="22" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+                  <line x1="0" y1="33" x2="260" y2="33" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+                  <!-- 棒グラフ -->
+                  <rect x="4"   y="28" width="14" height="14" rx="2" fill="rgba(236,76,134,0.35)"/>
+                  <rect x="26"  y="22" width="14" height="20" rx="2" fill="rgba(236,76,134,0.4)"/>
+                  <rect x="48"  y="18" width="14" height="24" rx="2" fill="rgba(168,85,247,0.4)"/>
+                  <rect x="70"  y="24" width="14" height="18" rx="2" fill="rgba(168,85,247,0.35)"/>
+                  <rect x="92"  y="14" width="14" height="28" rx="2" fill="rgba(168,85,247,0.45)"/>
+                  <rect x="114" y="10" width="14" height="32" rx="2" fill="rgba(97,82,255,0.45)"/>
+                  <rect x="136" y="16" width="14" height="26" rx="2" fill="rgba(97,82,255,0.4)"/>
+                  <rect x="158" y="8"  width="14" height="34" rx="2" fill="rgba(97,82,255,0.5)"/>
+                  <rect x="180" y="12" width="14" height="30" rx="2" fill="rgba(97,82,255,0.5)"/>
+                  <rect x="202" y="6"  width="14" height="36" rx="2" fill="rgba(97,82,255,0.55)"/>
+                  <rect x="224" y="4"  width="14" height="38" rx="2" fill="url(#dbGrad)" opacity="0.85"/>
+                  <rect x="246" y="2"  width="14" height="40" rx="2" fill="url(#dbGrad)"/>
+                  <!-- トレンドライン -->
+                  <path d="M11,28 L33,23 L55,19 L77,24 L99,14 L121,10 L143,16 L165,8 L187,12 L209,6 L231,4 L253,2" fill="none" stroke="url(#dbGrad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="siv-spark-line"/>
+                  <!-- 直近ポイント -->
+                  <circle cx="253" cy="2" r="3" fill="#fff" opacity="0.9"/>
+                </svg>
+                <!-- 月ラベル -->
+                <div class="siv-db-months">
+                  <span>1月</span><span>3月</span><span>5月</span><span>7月</span><span>9月</span><span>11月</span><span>12月</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 接続線SVG：JSが動的に描画 -->
+            <svg class="siv-lines" id="sivLinesSvg" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <filter id="siv-glow">
+                  <feGaussianBlur stdDeviation="2" result="b"/>
+                  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+                <linearGradient id="spkGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#a855f7"/>
+                  <stop offset="100%" stop-color="#6152FF"/>
+                </linearGradient>
+              </defs>
+            </svg>
+
+          </div><!-- /siv-wrap -->
+        </div><!-- /hero-3d-wrap -->
+      </div><!-- /hero-right -->
+    </div><!-- /hero-content -->
+
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+
+    <div class="hero-fade-bottom"></div>
+
+  </section>
+
+  <!-- ===== アサイン調整 ハイライトセクション（sky-stage 内に含めて空背景を継承） ===== -->
+  <section class="assign-highlight-section">
+    <div class="container assign-hl-inner">
+
+      <!-- ヘッダー -->
+      <div class="assign-hl-header" data-aos="fade-up">
+        <div class="assign-patent-badge">
+          <i class="fas fa-certificate"></i> 特許取得済
+        </div>
+        <h2 class="assign-hl-title">
+          複雑なアサイン調整を、<br>
+          <span class="gradient-text-pink">圧倒的にシンプルに。</span>
+        </h2>
+        <p class="assign-hl-desc">
+          IT・SIer・コンサル企業が抱える「誰をいつどこにアサインするか」という最も煩雑な業務を、
+          STRUCTの特許技術が根本から解決します。アベイラブルなスタッフの把握から案件へのアサイン確定まで、すべてをひとつの画面で完結。
+        </p>
+      </div>
+
+      <!-- スクリーンショット -->
+      <div class="assign-hl-screenshot js-spin-in">
+        <div class="assign-hl-screenshot-wrap">
+          <div class="assign-hl-browser-bar">
+            <span></span><span></span><span></span>
+          </div>
+          <img src="images/features/img-assign-adjustment-hires.png" alt="STRUCTアサイン調整画面" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- 特徴カード -->
+      <div class="assign-hl-features">
+        <div class="assign-hl-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="assign-hl-card-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="assign-hl-card-title">アベイラブルスタッフを瞬時に把握</div>
+          <p class="assign-hl-card-desc">アベイラブルな自社・協力会社スタッフを一覧表示。スキルや稼働時間でフィルタリングし、最適な人材をすぐに見つけられます。</p>
+        </div>
+        <div class="assign-hl-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="assign-hl-card-icon">
+            <i class="fas fa-exchange-alt"></i>
+          </div>
+          <div class="assign-hl-card-title">ドラッグ＆ドロップで直感的に配置</div>
+          <p class="assign-hl-card-desc">スタッフカードを案件にドラッグするだけでアサイン完了。入れ替わりが激しい現場でも、リアルタイムに配置を調整できます。</p>
+        </div>
+        <div class="assign-hl-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="assign-hl-card-icon">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
+          <div class="assign-hl-card-title">過多・不足をリアルタイムに検知</div>
+          <p class="assign-hl-card-desc">アサイン時間の超過・不足はハイライト表示で即座に警告。リソース配分の偏りを未然に防ぎ、組織全体の稼働率を最適化します。</p>
+        </div>
+        <div class="assign-hl-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="assign-hl-card-icon">
+            <i class="fas fa-project-diagram"></i>
+          </div>
+          <div class="assign-hl-card-title">案件収益性を見ながら意思決定</div>
+          <p class="assign-hl-card-desc">案件の受注金額・利益率・対象期間をポップアップで即確認。採算を考慮したアサイン判断をその場で下せます。</p>
+        </div>
+        <div class="assign-hl-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="assign-hl-card-icon">
+            <i class="fas fa-calendar-check"></i>
+          </div>
+          <div class="assign-hl-card-title">月次ガントで長期計画を一覧管理</div>
+          <p class="assign-hl-card-desc">案件ベースのガントチャートで、複数月にわたるアサイン計画を一画面で管理。中長期のリソース見通しを組織全体で共有できます。</p>
+        </div>
+        <div class="assign-hl-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="assign-hl-card-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="assign-hl-card-title">特許取得の独自アルゴリズム</div>
+          <p class="assign-hl-card-desc">STRUCTのアサイン管理機能は特許を取得した独自の仕組みです。業界標準を超えた合理的なリソース管理を実現します。</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  </div><!-- /.sky-stage -->
+
+  <!-- ===== LOGO MARQUEE ===== -->
+  <section class="trust-section">
+    <div class="container">
+      <p class="trust-label">STRUCTが適合する企業</p>
+    </div>
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        <span class="marquee-item"><i class="fas fa-building"></i> システム開発企業</span>
+        <span class="marquee-item"><i class="fas fa-laptop-code"></i> SIer</span>
+        <span class="marquee-item"><i class="fas fa-chart-pie"></i> コンサルティング企業</span>
+        <span class="marquee-item"><i class="fas fa-palette"></i> クリエイティブ企業</span>
+        <span class="marquee-item"><i class="fas fa-mobile-alt"></i> 弁護士事務所</span>
+        <span class="marquee-item"><i class="fas fa-cloud"></i> クラウドサービス開発企業</span>
+        <span class="marquee-item"><i class="fas fa-shield-alt"></i> セキュリティ関連企業</span>
+        <span class="marquee-item"><i class="fas fa-building"></i> システム開発企業</span>
+        <span class="marquee-item"><i class="fas fa-laptop-code"></i> SIer</span>
+        <span class="marquee-item"><i class="fas fa-chart-pie"></i> コンサルティング企業</span>
+        <span class="marquee-item"><i class="fas fa-palette"></i> クリエイティブ企業</span>
+        <span class="marquee-item"><i class="fas fa-mobile-alt"></i> 弁護士事務所</span>
+        <span class="marquee-item"><i class="fas fa-cloud"></i> クラウドサービス開発企業</span>
+        <span class="marquee-item"><i class="fas fa-shield-alt"></i> セキュリティ関連企業</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 企業の成長を支えるオールインワンソリューション ===== -->
+  <section id="features" class="features-section section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">PLATFORM CAPABILITIES</span>
+        <h2 class="section-title">
+          企業の成長を支える<br />
+          <span class="gradient-text">オールインワンソリューション。</span>
+        </h2>
+        <p class="section-desc">STRUCTはこれまでEXCELで行っていたようなアサイン管理から複数のシステムで管理されていた受注管理や経費精算まで統合されたワンストップソリューションで解決します。</p>
+      </div>
+
+      <div class="features-new-list">
+
+        <!-- 1: ダッシュボード -->
+        <div class="fnl-item" data-aos="fade-up" data-aos-delay="0">
+          <div class="fnl-text">
+            <div class="fnl-badge-row">
+              <span class="fnl-icon-wrap" style="--ic:#EC4C86">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="3" y="3" width="8" height="8" rx="1.5" fill="rgba(236,76,134,0.25)" stroke="#EC4C86" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="13" y="3" width="8" height="8" rx="1.5" fill="rgba(13,148,136,0.22)" stroke="#f3f3f3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="3" y="13" width="8" height="8" rx="1.5" fill="rgba(13,148,136,0.22)" stroke="#f3f3f3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="13" y="13" width="8" height="8" rx="1.5" fill="rgba(236,76,134,0.25)" stroke="#EC4C86" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="fnl-module-name" style="color:#EC4C86">ダッシュボード</span>
+            </div>
+            <h3 class="fnl-title">事業KPIをリアルタイムに可視化</h3>
+            <p class="fnl-desc">販売、購買から勤怠、経費、評価まですべてのデータがSTRUCT上に統合されているためシステム利用開始後すぐに統合されたデータのリアルタイム照会が可能です。事業に欠かせないKPIを搭載したダッシュボードが標準で準備されています。<br>・組織別月別売上／各種売上構成比<br>・組織別月別スタッフ数／スタッフ原価／稼働率<br>・組織別月別協力会社数／外注費<br>・残業時間／勤怠状況／スタッフ経費／評価<br>など多数</p>
+          </div>
+          <div class="fnl-visual">
+            <img src="images/features/img-dashboard-hires.png" alt="ダッシュボード画面" class="fnl-img" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- 2: 案件／スタッフレポート -->
+        <div class="fnl-item fnl-item" data-aos="fade-up" data-aos-delay="0">
+          <div class="fnl-text">
+            <div class="fnl-badge-row">
+              <span class="fnl-icon-wrap" style="--ic:#EC4C86">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" fill="rgba(236,76,134,0.25)" stroke="#EC4C86" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M14 2v6h6" stroke="#f3f3f3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8 13h8M8 17h4" stroke="#EC4C86" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="fnl-module-name" style="color:#EC4C86">案件／スタッフレポート</span>
+            </div>
+            <h3 class="fnl-title">案件収支、組織収支をリアルタイムにレポート</h3>
+            <p class="fnl-desc">把握の難しい収支レポートをいつでもすぐに参照可能です。案件別収支、スタッフ別収支、組織別収支など様々な切り口でのレポートが標準搭載されています。</p>
+          </div>
+          <div class="fnl-visual">
+            <img src="images/features/img-staff-report-hires.png" alt="案件／スタッフレポート画面" class="fnl-img" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- 3: アサイン調整 -->
+        <div class="fnl-item" data-aos="fade-up" data-aos-delay="0">
+          <div class="fnl-text">
+            <div class="fnl-badge-row">
+              <span class="fnl-icon-wrap" style="--ic:#EC4C86">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="3" y="4" width="18" height="18" rx="2.5" fill="rgba(236,76,134,0.25)" stroke="#EC4C86" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16 2v4M8 2v4" stroke="#f3f3f3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M3 10h18" stroke="#EC4C86" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="fnl-module-name" style="color:#EC4C86">アサイン調整</span>
+              <span class="fnl-patent-badge">✦ 特許取得</span>
+            </div>
+            <h3 class="fnl-title">入れ替わりが早く複雑なアサイン調整を簡単に実現</h3>
+            <p class="fnl-desc">多くの企業がEXCEL管理しているアサイン調整。この業界では、引合案件があった場合、そこに提案するスタッフが見つかるかどうかで提案の可否が決定するため、案件や候補となる空きスタッフ、協力会社のスタッフの入れ替わりが早いのが特徴です。この情報管理をクイックかつ合理的に行うための機能がSTRUCTには準備されています。</p>
+          </div>
+          <div class="fnl-visual">
+            <img src="images/features/img-assign-adjustment-hires.png" alt="アサイン調整画面" class="fnl-img" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- 4: アサインリクエスト管理 -->
+        <div class="fnl-item" data-aos="fade-up" data-aos-delay="0">
+          <div class="fnl-text">
+            <div class="fnl-badge-row">
+              <span class="fnl-icon-wrap" style="--ic:#EC4C86">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22 2L11 13" stroke="#f3f3f3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 2L15 22L11 13L2 9L22 2Z" fill="rgba(236,76,134,0.25)" stroke="#EC4C86" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="fnl-module-name" style="color:#EC4C86">アサインリクエスト管理</span>
+              <span class="fnl-patent-badge">✦ 特許取得</span>
+            </div>
+            <h3 class="fnl-title">アサイン依頼から決定までを仕組化</h3>
+            <p class="fnl-desc">スタッフをアサインしたいプロジェクトマネジャーは、アサインリクエストをアサイン管理者へ申請します。アサイン管理者は、組織全体のアサイン予定や各プロジェクトの業務内容・採算性等を見ながら承認します。アサイン業務の標準化と仕組化により、限りあるリソースの最適配置を実現します。</p>
+          </div>
+          <div class="fnl-visual">
+            <img src="images/features/img-assign-request-hires.png" alt="アサインリクエスト管理画面" class="fnl-img" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- 2: アサイン予定管理 -->
+        <div class="fnl-item fnl-item" data-aos="fade-up" data-aos-delay="0">
+          <div class="fnl-text">
+            <div class="fnl-badge-row">
+              <span class="fnl-icon-wrap" style="--ic:#EC4C86">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="3" y="4" width="18" height="18" rx="2.5" fill="rgba(236,76,134,0.25)" stroke="#EC4C86" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16 2v4M8 2v4" stroke="#f3f3f3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M3 10h18" stroke="#EC4C86" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="fnl-module-name" style="color:#EC4C86">アサイン予定管理</span>
+            </div>
+            <h3 class="fnl-title">全スタッフのアサイン予定を可視化</h3>
+            <p class="fnl-desc">全スタッフのアサイン予定は一覧で管理され、誰がいつからどのプロジェクトにアサインされるのかを容易に把握可能になります。また、予定の不足や超過はハイライト表示され、一目で異常を検知できます。</p>
+          </div>
+          <div class="fnl-visual">
+            <img src="images/features/img-assign-schedule-hires.png" alt="アサイン予定管理画面" class="fnl-img" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- 3: 職務経歴書管理 -->
+        <div class="fnl-item" data-aos="fade-up" data-aos-delay="0">
+          <div class="fnl-text">
+            <div class="fnl-badge-row">
+              <span class="fnl-icon-wrap" style="--ic:#EC4C86">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" fill="rgba(236,76,134,0.25)" stroke="#EC4C86" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M14 2v6h6" stroke="#f3f3f3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8 13h8M8 17h4" stroke="#EC4C86" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="fnl-module-name" style="color:#EC4C86">職務経歴書管理</span>
+            </div>
+            <h3 class="fnl-title">稼働可能なスタッフの職務経歴書を即座に把握</h3>
+            <p class="fnl-desc">スタッフはSTRUCTに職務経歴を登録します。この際、自己紹介動画も登録することができます。プロジェクトマネジャーは、スキルなどのキーワードで全スタッフから最適なスタッフを検索することができます。また、稼働可能なスタッフの職務経歴書・動画を参照することで、アサインまでの時間を短縮することが可能です。</p>
+          </div>
+          <div class="fnl-visual">
+            <img src="images/features/img-resume-hires.png" alt="職務経歴書管理画面" class="fnl-img" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- 4: 案件状況管理 -->
+        <div class="fnl-item" data-aos="fade-up" data-aos-delay="0">
+          <div class="fnl-text">
+            <div class="fnl-badge-row">
+              <span class="fnl-icon-wrap" style="--ic:#EC4C86">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 7a2 2 0 012-2h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V7z" fill="rgba(236,76,134,0.25)" stroke="#EC4C86" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" stroke="#EC4C86" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8 11h8" stroke="#f3f3f3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="fnl-module-name" style="color:#EC4C86">案件状況管理</span>
+            </div>
+            <h3 class="fnl-title">リスクの早期発見</h3>
+            <p class="fnl-desc">案件状況管理では、各プロジェクトマネジャーからの定期的なリスク報告を仕組化します。報告されるリスク：案件別の遅延や品質リスク、顧客との関係性、案件継続見通し 等。事後対策になりがちな顧客対応をリスク検知により改善します。</p>
+          </div>
+          <div class="fnl-visual">
+            <img src="images/features/img-project-status-hires.png" alt="案件状況管理画面" class="fnl-img" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- 6: アサイン予実管理 -->
+        <div class="fnl-item fnl-item" data-aos="fade-up" data-aos-delay="0">
+          <div class="fnl-text">
+            <div class="fnl-badge-row">
+              <span class="fnl-icon-wrap" style="--ic:#EC4C86">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2v10h10A10 10 0 1012 2z" fill="rgba(236,76,134,0.25)" stroke="#EC4C86" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 2a10 10 0 0110 10H12V2z" fill="rgba(13,148,136,0.22)" stroke="#f3f3f3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="fnl-module-name" style="color:#EC4C86">アサイン予実管理</span>
+            </div>
+            <h3 class="fnl-title">アサイン計画と実績の乖離を検出</h3>
+            <p class="fnl-desc">ワンストップソリューションであるSTRUCTにより、アサイン計画と実績の突合をワンクリックで実現します。計画と実績にGAPが存在する場合、ハイライト表示されることで、アサイン計画と実績の乖離解消を仕組化することが容易になります。</p>
+          </div>
+          <div class="fnl-visual">
+            <img src="images/features/img-assign-yojitsu-hires.png" alt="アサイン予実管理画面" class="fnl-img" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- 7: 受注管理① -->
+        <div class="fnl-item" data-aos="fade-up" data-aos-delay="0">
+          <div class="fnl-text">
+            <div class="fnl-badge-row">
+              <span class="fnl-icon-wrap" style="--ic:#EC4C86">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 22a1 1 0 100-2 1 1 0 000 2zM20 22a1 1 0 100-2 1 1 0 000 2z" fill="#EC4C86"/>
+                  <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6" fill="rgba(236,76,134,0.25)" stroke="#EC4C86" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="fnl-module-name" style="color:#EC4C86">受注管理①</span>
+            </div>
+            <h3 class="fnl-title">スタッフクラス別の販売単価・原価管理</h3>
+            <p class="fnl-desc">STRUCTにはスタッフクラスというスタッフを分類するための項目があります。販売単価と原価はスタッフクラス別に管理されます。また、販売単価は顧客グループ別にスタッフクラス毎に設定することができます。</p>
+          </div>
+          <div class="fnl-visual">
+            <img src="images/features/sales-order-3-hires.png" alt="受注管理①画面" class="fnl-img" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- 8: 受注管理② -->
+        <div class="fnl-item fnl-item" data-aos="fade-up" data-aos-delay="0">
+          <div class="fnl-text">
+            <div class="fnl-badge-row">
+              <span class="fnl-icon-wrap" style="--ic:#EC4C86">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" fill="rgba(236,76,134,0.25)" stroke="#EC4C86" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M3.27 6.96L12 12.01l8.73-5.05" stroke="#f3f3f3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 22.08V12" stroke="#f3f3f3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="fnl-module-name" style="color:#EC4C86">受注管理②</span>
+            </div>
+            <h3 class="fnl-title">利益率・最低単価アラートで改善活動を強化</h3>
+            <p class="fnl-desc">STRUCTでは、あらかじめ規定の利益率・最低単価を設定しておくことで、規定を下回る内容にアラートを発報することができます。規定を下回ったケースはハイライト表示されます。受注時点だけでなく受注後のフォローまで含めた改善活動の仕組みとして機能します。</p>
+          </div>
+          <div class="fnl-visual">
+            <img src="images/features/sales-order-4-hires.png" alt="受注管理②画面" class="fnl-img" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- 9: 債権管理 -->
+        <div class="fnl-item" data-aos="fade-up" data-aos-delay="0">
+          <div class="fnl-text">
+            <div class="fnl-badge-row">
+              <span class="fnl-icon-wrap" style="--ic:#EC4C86">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2" y="5" width="20" height="14" rx="2" fill="rgba(236,76,134,0.25)" stroke="#EC4C86" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M2 10h20" stroke="#EC4C86" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6 15h4" stroke="#f3f3f3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="fnl-module-name" style="color:#EC4C86">債権管理</span>
+            </div>
+            <h3 class="fnl-title">ワンクリック請求書発行・マトリクス管理で請求漏れを防止</h3>
+            <p class="fnl-desc">顧客向け債権はSTRUCT上で承認管理がおこなわれます。承認後、担当者はワンクリックで請求書を発行することができます。案件別月別にマトリクス表示する管理機能により、請求書発行漏れや債権計上漏れを一目で発見することが可能です。</p>
+          </div>
+          <div class="fnl-visual">
+            <img src="images/features/sales-order-5-hires.png" alt="債権管理画面" class="fnl-img" loading="lazy" />
+          </div>
+        </div>
+
+      </div><!-- /features-new-list -->
+    </div><!-- /container -->
+  </section>
+
+  <!-- ===== SOLUTIONS SECTION ===== -->
+  <section id="solutions" class="solutions-section section">
+    <!-- SVGチェック浮遊エフェクト（Canvas） -->
+    <canvas id="solParticleCanvas" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;"></canvas>
+    <!-- 背景装飾オーブ -->
+    <div class="sol-bg-orb sol-bg-orb--1" aria-hidden="true"></div>
+    <div class="sol-bg-orb sol-bg-orb--2" aria-hidden="true"></div>
+    <div class="sol-bg-orb sol-bg-orb--3" aria-hidden="true"></div>
+    <!-- スキャンライン -->
+    <div class="sol-network-lines" aria-hidden="true">
+      <div class="sol-net-line sol-net-line--1"></div>
+      <div class="sol-net-line sol-net-line--2"></div>
+      <div class="sol-net-line sol-net-line--3"></div>
+    </div>
+
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">ISSUES</span>
+        <h2 class="section-title">
+          IT企業が抱える多くの課題を<br />
+          <span class="gradient-text">一気に解決</span>
+        </h2>
+        <p class="solutions-lead">STRUCTはすべてのレイヤーの課題を解決します。</p>
+
+      </div>
+
+      <!-- ===== MANAGER ===== -->
+      <div class="sol-role-block" data-aos="fade-up" data-aos-delay="60">
+        <div class="sol-role-header sol-role-header--manager">
+          <div class="sol-role-icon"><i class="fas fa-user-tie"></i></div>
+          <div class="sol-role-info">
+            <div class="sol-role-name">マネージャー</div>
+          </div>
+          <div class="sol-role-count"><span>3</span> 件の課題解決</div>
+        </div>
+
+        <div class="sol-card sol-card--manager" data-aos="fade-up" data-aos-delay="80">
+          <div class="sol-card-title">スタッフアサインをもっとスマートに</div>
+          <div class="sol-card-body">
+            <div class="sol-before">
+              <span class="sol-badge sol-badge--before">BEFORE STRUCT</span>
+              <div class="sol-before-icon"><i class="fas fa-times-circle"></i></div>
+              <h4>スタッフの空き状況、きちんと管理できません</h4>
+              <p class="sol-quote">「スタッフの空き状況はこのEXCELで管理しているんだけど、突然の受注や失注で頻繁に変更が発生するし、とても管理できない…」</p>
+            </div>
+            <div class="sol-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="sol-after sol-after--manager">
+              <span class="sol-badge sol-badge--after sol-badge--manager">WITH STRUCT</span>
+              <div class="sol-after-icon sol-after-icon--manager"><i class="fas fa-check-circle"></i></div>
+              <h4>スタッフアサインの合理的な管理を仕組化</h4>
+              <p>IT企業のスタッフアサインは、突然の案件受注や失注、スタッフのアクシデント等によりたえず変化します。スタッフのアサインを最適かつ迅速に管理することは収益に直結する重要課題。STRUCTはスタッフアサインの合理的な管理の仕組みを提供します。</p>
+              <div class="sol-tags">
+                <a class="sol-tag sol-tag--manager" href="features/assignment-management.html"><i class="fas fa-check"></i> アサイン管理</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sol-card sol-card--manager" data-aos="fade-up" data-aos-delay="120">
+          <div class="sol-card-title">予定と実績の乖離をすぐ発見</div>
+          <div class="sol-card-body">
+            <div class="sol-before">
+              <span class="sol-badge sol-badge--before">BEFORE STRUCT</span>
+              <div class="sol-before-icon"><i class="fas fa-times-circle"></i></div>
+              <h4>予定アサインと実績が、なぜかズレている</h4>
+              <p class="sol-quote">「空きのはずだったスタッフが実際にはアサインされていた…どのプロジェクトのアサイン計画がおかしくなったのか？予実比較は面倒だけど…まあいいか。」</p>
+            </div>
+            <div class="sol-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="sol-after sol-after--manager">
+              <span class="sol-badge sol-badge--after sol-badge--manager">WITH STRUCT</span>
+              <div class="sol-after-icon sol-after-icon--manager"><i class="fas fa-check-circle"></i></div>
+              <h4>一体型だから「予算対実績」の比較も簡単</h4>
+              <p>STRUCTは計画から実績まですべてを一体型システムで管理するため、予算と実績の突き合わせが簡単に行えます。</p>
+              <div class="sol-tags">
+                <a class="sol-tag sol-tag--manager" href="features/business-management.html"><i class="fas fa-check"></i> 経営管理</a>
+                <a class="sol-tag sol-tag--manager" href="features/assignment-management.html"><i class="fas fa-check"></i> アサイン管理</a>
+                <a class="sol-tag sol-tag--manager" href="features/attendance-expense-management.html"><i class="fas fa-check"></i> 勤怠・経費管理</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sol-card sol-card--manager" data-aos="fade-up" data-aos-delay="160">
+          <div class="sol-card-title">見積・請求・支払をワンクリックで</div>
+          <div class="sol-card-body">
+            <div class="sol-before">
+              <span class="sol-badge sol-badge--before">BEFORE STRUCT</span>
+              <div class="sol-before-icon"><i class="fas fa-times-circle"></i></div>
+              <h4>見積書・請求書・協力会社への支払い対応で本業に集中できません</h4>
+              <p class="sol-quote">「顧客への見積書対応、毎月の請求書発行、協力会社への支払処理など、面倒なルーティン業務がたくさんあります。もっと案件に集中したいのですが…」</p>
+            </div>
+            <div class="sol-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="sol-after sol-after--manager">
+              <span class="sol-badge sol-badge--after sol-badge--manager">WITH STRUCT</span>
+              <div class="sol-after-icon sol-after-icon--manager"><i class="fas fa-check-circle"></i></div>
+              <h4>協力会社への支払いフローをワンクリックで効率化</h4>
+              <p>STRUCTなら押印付きの見積書・請求書をワンクリックで発行。見積提出・請求書発行・協力会社への支払い承認も簡略化し、毎月のルーティン業務を大幅に削減できます。</p>
+              <div class="sol-tags">
+                <a class="sol-tag sol-tag--manager" href="features/sales-management.html"><i class="fas fa-check"></i> 販売管理</a>
+                <a class="sol-tag sol-tag--manager" href="features/purchase-management.html"><i class="fas fa-check"></i> 購買管理</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== STAFF ===== -->
+      <div class="sol-role-block" data-aos="fade-up" data-aos-delay="60">
+        <div class="sol-role-header sol-role-header--manager">
+          <div class="sol-role-icon"><i class="fas fa-user"></i></div>
+          <div class="sol-role-info">
+            <div class="sol-role-name">スタッフ</div>
+          </div>
+          <div class="sol-role-count"><span>3</span> 件の課題解決</div>
+        </div>
+
+        <div class="sol-card sol-card--manager" data-aos="fade-up" data-aos-delay="80">
+          <div class="sol-card-title">会社の状況がひと目でわかる</div>
+          <div class="sol-card-body">
+            <div class="sol-before">
+              <span class="sol-badge sol-badge--before">BEFORE STRUCT</span>
+              <div class="sol-before-icon"><i class="fas fa-times-circle"></i></div>
+              <h4>会社の状況？まったくわかりません。</h4>
+              <p class="sol-quote">「うちの会社は本当に成長しているんだろうか？自分が担当している以外にどんな案件があるの？この会社にいて大丈夫かな…」</p>
+            </div>
+            <div class="sol-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="sol-after sol-after--manager">
+              <span class="sol-badge sol-badge--after sol-badge--manager">WITH STRUCT</span>
+              <div class="sol-after-icon sol-after-icon--manager"><i class="fas fa-check-circle"></i></div>
+              <h4>売上・稼働率などをダッシュボードでリアルタイムに共有</h4>
+              <p>STRUCTのダッシュボード機能を通じて、様々なKPIを全スタッフに共有できます。成長を共に喜ぶ一体感を生み出すことができます。</p>
+              <div class="sol-tags">
+                <a class="sol-tag sol-tag--manager" href="features/information-management.html"><i class="fas fa-check"></i> 情報管理</a>
+                <a class="sol-tag sol-tag--manager" href="features/business-management.html"><i class="fas fa-check"></i> 経営管理</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sol-card sol-card--manager" data-aos="fade-up" data-aos-delay="120">
+          <div class="sol-card-title">新しい仲間をすぐに知れる</div>
+          <div class="sol-card-body">
+            <div class="sol-before">
+              <span class="sol-badge sol-badge--before">BEFORE STRUCT</span>
+              <div class="sol-before-icon"><i class="fas fa-times-circle"></i></div>
+              <h4>あの人、誰だろう？知らない顔が多すぎる…</h4>
+              <p class="sol-quote">「久しぶりに出社したら知らない顔がたくさん。どの部署の人だろう？誰なのかわかれば話しかけられるのに…」</p>
+            </div>
+            <div class="sol-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="sol-after sol-after--manager">
+              <span class="sol-badge sol-badge--after sol-badge--manager">WITH STRUCT</span>
+              <div class="sol-after-icon sol-after-icon--manager"><i class="fas fa-check-circle"></i></div>
+              <h4>新入社員をタイムリーに共有。自己紹介動画でコミュニケーション活性化</h4>
+              <p>新入社員が入社すると、その情報がSTRUCTのトップ画面に共有されます。また、自己紹介動画機能により個性をアピールでき、社内コミュニケーションの向上に貢献します。</p>
+              <div class="sol-tags">
+                <a class="sol-tag sol-tag--manager" href="features/information-management.html"><i class="fas fa-check"></i> 情報管理</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sol-card sol-card--manager" data-aos="fade-up" data-aos-delay="160">
+          <div class="sol-card-title">退職リスクをリアルタイムに可視化</div>
+          <div class="sol-card-body">
+            <div class="sol-before">
+              <span class="sol-badge sol-badge--before">BEFORE STRUCT</span>
+              <div class="sol-before-icon"><i class="fas fa-times-circle"></i></div>
+              <h4>私、もうこの保守案件に4年います。部長はそのことを知ってますか？</h4>
+              <p class="sol-quote">「なんで辞めるの？」「入社からずっとこの保守案件で…新しいことがやりたい！」「知らなかった…なんで言ってくれなかったの…」</p>
+            </div>
+            <div class="sol-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="sol-after sol-after--manager">
+              <span class="sol-badge sol-badge--after sol-badge--manager">WITH STRUCT</span>
+              <div class="sol-after-icon sol-after-icon--manager"><i class="fas fa-check-circle"></i></div>
+              <h4>スタッフの退職リスクをリアルタイムに可視化</h4>
+              <p>各スタッフのアサイン期間・研修参加・活動への関与・残業時間などをリアルタイムに可視化し、アラートを発行することで、タイムリーな対応が可能になります。</p>
+              <div class="sol-tags">
+                <a class="sol-tag sol-tag--manager" href="features/business-management.html"><i class="fas fa-check"></i> 経営管理</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== EXECUTIVE ===== -->
+      <div class="sol-role-block" data-aos="fade-up" data-aos-delay="60">
+        <div class="sol-role-header sol-role-header--manager">
+          <div class="sol-role-icon"><i class="fas fa-crown"></i></div>
+          <div class="sol-role-info">
+            <div class="sol-role-name">経営者</div>
+          </div>
+          <div class="sol-role-count"><span>4</span> 件の課題解決</div>
+        </div>
+
+        <div class="sol-card sol-card--manager" data-aos="fade-up" data-aos-delay="80">
+          <div class="sol-card-title">すべての案件状況を把握する</div>
+          <div class="sol-card-body">
+            <div class="sol-before">
+              <span class="sol-badge sol-badge--before">BEFORE STRUCT</span>
+              <div class="sol-before-icon"><i class="fas fa-times-circle"></i></div>
+              <h4>その案件が炎上していること、知りませんでした</h4>
+              <p class="sol-quote">「そういえば開発部のZさんが先日あの案件で騒いでいたな…あの案件、今どうなってるんだろう？そろそろ納期だったような気がするんだけど…」</p>
+            </div>
+            <div class="sol-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="sol-after sol-after--manager">
+              <span class="sol-badge sol-badge--after sol-badge--manager">WITH STRUCT</span>
+              <div class="sol-after-icon sol-after-icon--manager"><i class="fas fa-check-circle"></i></div>
+              <h4>全案件の状況報告を仕組化。案件リスクを早期に検知</h4>
+              <p>STRUCTで全案件の毎月定例報告を簡単に仕組化し、リスクを可視化。案件リスクを早期に検知することで、サービス品質の向上を実現します。</p>
+              <div class="sol-tags">
+                <a class="sol-tag sol-tag--manager" href="features/business-management.html"><i class="fas fa-check"></i> 経営管理</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sol-card sol-card--manager" data-aos="fade-up" data-aos-delay="120">
+          <div class="sol-card-title">損益・キャッシュフローをいつでも確認</div>
+          <div class="sol-card-body">
+            <div class="sol-before">
+              <span class="sol-badge sol-badge--before">BEFORE STRUCT</span>
+              <div class="sol-before-icon"><i class="fas fa-times-circle"></i></div>
+              <h4>損益計算書・キャッシュフローの計算、本当に時間がかかります</h4>
+              <p class="sol-quote">「今期に余裕があれば採用や新規案件に投資したい…でも利益とキャッシュフローを確認するには経理部門に依頼しないといけない。忙しそうだし、頼みづらい…」</p>
+            </div>
+            <div class="sol-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="sol-after sol-after--manager">
+              <span class="sol-badge sol-badge--after sol-badge--manager">WITH STRUCT</span>
+              <div class="sol-after-icon sol-after-icon--manager"><i class="fas fa-check-circle"></i></div>
+              <h4>利益・キャッシュフローをいつでも確認</h4>
+              <p>STRUCTならワンボタンで損益・キャッシュフローを確認できます。すべての機能を統合した一体型ソリューションならではの、即時データ分析・レポート機能が最大の強みです。</p>
+              <div class="sol-tags">
+                <a class="sol-tag sol-tag--manager" href="features/business-management.html"><i class="fas fa-check"></i> 経営管理</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sol-card sol-card--manager" data-aos="fade-up" data-aos-delay="160">
+          <div class="sol-card-title">承認ワークフローも一体で完結</div>
+          <div class="sol-card-body">
+            <div class="sol-before">
+              <span class="sol-badge sol-badge--before">BEFORE STRUCT</span>
+              <div class="sol-before-icon"><i class="fas fa-times-circle"></i></div>
+              <h4>承認ワークフローシステム、やっぱり導入しないといけないよね？</h4>
+              <p class="sol-quote">「見積承認、契約承認、請求書承認、経費精算承認…毎日の承認業務は山積み。別システムと連携させないといけないですよね？」</p>
+            </div>
+            <div class="sol-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="sol-after sol-after--manager">
+              <span class="sol-badge sol-badge--after sol-badge--manager">WITH STRUCT</span>
+              <div class="sol-after-icon sol-after-icon--manager"><i class="fas fa-check-circle"></i></div>
+              <h4>承認ワークフローも一体。一体型がやっぱり便利</h4>
+              <p>別途承認ワークフローシステムを導入すると、連携システムの構築が必要になり使い勝手も悪化します。STRUCTは承認ワークフローが一体型。STRUCTの承認ワークフローで、ほとんどの承認プロセスをシームレスに完結できます。</p>
+              <div class="sol-tags">
+                <a class="sol-tag sol-tag--manager" href="features/approval-management.html"><i class="fas fa-check"></i> 承認管理</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ===== すべてに共通する課題（ロール非依存） ===== -->
+      <div class="sol-role-block sol-role-block--all" data-aos="fade-up" data-aos-delay="60">
+        <div class="sol-role-header sol-role-header--all">
+          <div class="sol-role-icon"><i class="fas fa-building"></i></div>
+          <div class="sol-role-info">
+            <div class="sol-role-name">すべての方へ</div>
+          </div>
+        </div>
+
+        <div class="sol-card sol-card--manager" data-aos="fade-up" data-aos-delay="80">
+          <div class="sol-card-title">バックオフィス業務を小さくシンプルに</div>
+          <div class="sol-card-body">
+            <div class="sol-before">
+              <span class="sol-badge sol-badge--before">BEFORE STRUCT</span>
+              <div class="sol-before-icon"><i class="fas fa-times-circle"></i></div>
+              <h4>うちの会社、バックオフィスの人員が多すぎませんか？</h4>
+              <p class="sol-quote">「やることが多いのはわかるけど…バックオフィスにこんなに人が必要なのだろうか？」</p>
+            </div>
+            <div class="sol-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="sol-after sol-after--manager">
+              <span class="sol-badge sol-badge--after sol-badge--manager">WITH STRUCT</span>
+              <div class="sol-after-icon sol-after-icon--manager"><i class="fas fa-check-circle"></i></div>
+              <h4>業務を効率化し、スモールバックオフィスを実現</h4>
+              <p>STRUCTはバックオフィス業務を驚くほどシンプルにします。</p>
+              <div class="sol-tags">
+                <a class="sol-tag sol-tag--manager" href="features/assignment-management.html"><i class="fas fa-check"></i> アサイン管理</a>
+                <a class="sol-tag sol-tag--manager" href="features/attendance-expense-management.html"><i class="fas fa-check"></i> 勤怠・経費管理</a>
+                <a class="sol-tag sol-tag--manager" href="features/sales-management.html"><i class="fas fa-check"></i> 販売管理</a>
+                <a class="sol-tag sol-tag--manager" href="features/purchase-management.html"><i class="fas fa-check"></i> 購買管理</a>
+                <a class="sol-tag sol-tag--manager" href="features/information-management.html"><i class="fas fa-check"></i> 情報管理</a>
+                <a class="sol-tag sol-tag--manager" href="features/evaluation-management.html"><i class="fas fa-check"></i> 評価管理</a>
+                <a class="sol-tag sol-tag--manager" href="features/approval-management.html"><i class="fas fa-check"></i> 承認管理</a>
+                <a class="sol-tag sol-tag--manager" href="features/business-management.html"><i class="fas fa-check"></i> 経営管理</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ===== ビルシルエット（地上が近づく演出） ===== -->
+    <div class="sol-cityscape" aria-hidden="true">
+      <svg class="sol-city-svg" viewBox="0 0 1440 220" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="cityGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#8ba8d4" stop-opacity="0.65"/>
+            <stop offset="100%" stop-color="#6590c8" stop-opacity="0.85"/>
+          </linearGradient>
+          <linearGradient id="cityGrad2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#b0c8e8" stop-opacity="0.50"/>
+            <stop offset="100%" stop-color="#8db0d8" stop-opacity="0.72"/>
+          </linearGradient>
+          <!-- 窓グリッドパターン -->
+          <pattern id="winPat" x="0" y="0" width="8" height="10" patternUnits="userSpaceOnUse">
+            <rect x="1" y="1" width="5" height="6" rx="0.5" fill="rgba(255,255,255,0.18)"/>
+          </pattern>
+          <pattern id="winPat2" x="0" y="0" width="10" height="14" patternUnits="userSpaceOnUse">
+            <rect x="1" y="1" width="6" height="8" rx="0.5" fill="rgba(255,255,255,0.14)"/>
+          </pattern>
+        </defs>
+
+        <!-- 遠景（薄い、後ろのビル群） -->
+        <!-- ビル1 -->
+        <rect x="10"  y="130" width="40"  height="90"  fill="url(#cityGrad2)"/>
+        <rect x="10"  y="130" width="40"  height="90"  fill="url(#winPat2)" opacity="0.7"/>
+        <!-- ビル2 -->
+        <rect x="55"  y="100" width="35"  height="120" fill="url(#cityGrad2)"/>
+        <rect x="55"  y="100" width="35"  height="120" fill="url(#winPat2)" opacity="0.7"/>
+        <!-- ビル3 -->
+        <rect x="95"  y="80"  width="50"  height="140" fill="url(#cityGrad2)"/>
+        <rect x="95"  y="80"  width="50"  height="140" fill="url(#winPat2)" opacity="0.7"/>
+        <!-- アンテナ -->
+        <rect x="118" y="65"  width="4"   height="18"  fill="url(#cityGrad2)"/>
+        <!-- ビル4 -->
+        <rect x="150" y="110" width="30"  height="110" fill="url(#cityGrad2)"/>
+        <!-- ビル5（高層） -->
+        <rect x="185" y="55"  width="55"  height="165" fill="url(#cityGrad2)"/>
+        <rect x="185" y="55"  width="55"  height="165" fill="url(#winPat2)" opacity="0.7"/>
+        <rect x="207" y="40"  width="10"  height="18"  fill="url(#cityGrad2)"/>
+        <!-- ビル6 -->
+        <rect x="245" y="95"  width="40"  height="125" fill="url(#cityGrad2)"/>
+        <!-- ビル7 -->
+        <rect x="290" y="70"  width="45"  height="150" fill="url(#cityGrad2)"/>
+        <rect x="290" y="70"  width="45"  height="150" fill="url(#winPat2)" opacity="0.6"/>
+        <!-- ビル8（超高層） -->
+        <rect x="340" y="30"  width="60"  height="190" fill="url(#cityGrad2)"/>
+        <rect x="340" y="30"  width="60"  height="190" fill="url(#winPat2)" opacity="0.6"/>
+        <rect x="366" y="12"  width="8"   height="22"  fill="url(#cityGrad2)"/>
+        <!-- 中央ビル群 -->
+        <rect x="410" y="90"  width="38"  height="130" fill="url(#cityGrad2)"/>
+        <rect x="453" y="60"  width="50"  height="160" fill="url(#cityGrad2)"/>
+        <rect x="453" y="60"  width="50"  height="160" fill="url(#winPat2)" opacity="0.6"/>
+        <rect x="509" y="85"  width="35"  height="135" fill="url(#cityGrad2)"/>
+        <rect x="550" y="45"  width="65"  height="175" fill="url(#cityGrad2)"/>
+        <rect x="550" y="45"  width="65"  height="175" fill="url(#winPat2)" opacity="0.5"/>
+        <rect x="579" y="28"  width="8"   height="20"  fill="url(#cityGrad2)"/>
+        <rect x="620" y="75"  width="42"  height="145" fill="url(#cityGrad2)"/>
+        <rect x="668" y="50"  width="55"  height="170" fill="url(#cityGrad2)"/>
+        <rect x="668" y="50"  width="55"  height="170" fill="url(#winPat2)" opacity="0.5"/>
+        <rect x="730" y="90"  width="35"  height="130" fill="url(#cityGrad2)"/>
+        <rect x="770" y="40"  width="60"  height="180" fill="url(#cityGrad2)"/>
+        <rect x="770" y="40"  width="60"  height="180" fill="url(#winPat2)" opacity="0.5"/>
+        <rect x="795" y="22"  width="10"  height="22"  fill="url(#cityGrad2)"/>
+        <!-- 右側ビル群 -->
+        <rect x="836" y="70"  width="48"  height="150" fill="url(#cityGrad2)"/>
+        <rect x="890" y="95"  width="36"  height="125" fill="url(#cityGrad2)"/>
+        <rect x="932" y="55"  width="58"  height="165" fill="url(#cityGrad2)"/>
+        <rect x="932" y="55"  width="58"  height="165" fill="url(#winPat2)" opacity="0.5"/>
+        <rect x="957" y="36"  width="8"   height="22"  fill="url(#cityGrad2)"/>
+        <rect x="996" y="80"  width="42"  height="140" fill="url(#cityGrad2)"/>
+        <rect x="1043" y="45" width="62"  height="175" fill="url(#cityGrad2)"/>
+        <rect x="1043" y="45" width="62"  height="175" fill="url(#winPat2)" opacity="0.5"/>
+        <rect x="1111" y="75" width="38"  height="145" fill="url(#cityGrad2)"/>
+        <rect x="1155" y="55" width="50"  height="165" fill="url(#cityGrad2)"/>
+        <rect x="1155" y="55" width="50"  height="165" fill="url(#winPat2)" opacity="0.5"/>
+        <rect x="1210" y="90" width="35"  height="130" fill="url(#cityGrad2)"/>
+        <rect x="1250" y="35" width="65"  height="185" fill="url(#cityGrad2)"/>
+        <rect x="1250" y="35" width="65"  height="185" fill="url(#winPat2)" opacity="0.5"/>
+        <rect x="1277" y="16" width="10"  height="22"  fill="url(#cityGrad2)"/>
+        <rect x="1320" y="70" width="45"  height="150" fill="url(#cityGrad2)"/>
+        <rect x="1370" y="95" width="75"  height="125" fill="url(#cityGrad2)"/>
+
+        <!-- 地面ライン -->
+        <rect x="0" y="218" width="1440" height="4" fill="rgba(168,196,224,0.50)"/>
+      </svg>
+    </div>
+
+  </section>
+
+  <!-- ===== CONTACT CTA ===== -->
+  <section id="contact" class="contact-section section">
+    <div class="container">
+      <div class="contact-card" data-aos="fade-up">
+        <div class="contact-bg-orb contact-bg-orb-1"></div>
+        <div class="contact-bg-orb contact-bg-orb-2"></div>
+        <div class="contact-content">
+          <h2 class="contact-title">
+            企業を合理化する<br />
+            <span class="gradient-text-light">準備はできていますか?</span>
+          </h2>
+          <p class="contact-desc">STRUCTは企業の合理化を促進することで成長を加速させます。<br />まずはお気軽にお問い合わせください。</p>
+
+          <div class="contact-ctas">
+            <a href="contact.html" class="btn btn-outline-white btn-lg">
+              <i class="fas fa-envelope"></i>
+              お問い合わせ
+            </a>
+            <a href="https://app.structapps.com/register1" class="btn btn-white btn-lg">
+              <i class="fas fa-rocket"></i>
+              今すぐ始める
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <svg width="36" height="36" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 2.83582C0 1.26964 1.26964 0 2.83582 0H35.1642C36.7304 0 38 1.26964 38 2.83582V35.1642C38 36.7304 36.7304 38 35.1642 38H2.83582C1.26964 38 0 36.7304 0 35.1642V2.83582Z" fill="url(#lg_ftr)"/><path d="M25.1413 15.6555H19.7272V13.9939C19.7272 13.2185 19.658 12.7246 19.5195 12.5123C19.3811 12.3 19.1503 12.1938 18.8272 12.1938C18.4764 12.1938 18.2087 12.3369 18.0241 12.6231C17.8487 12.9093 17.761 13.3431 17.761 13.9247C17.761 14.6724 17.8625 15.2355 18.0656 15.614C18.2595 15.9925 18.8087 16.4494 19.7134 16.9848C22.3074 18.5264 23.9413 19.7911 24.6151 20.7789C25.289 21.7666 25.626 23.359 25.626 25.556C25.626 27.153 25.4367 28.33 25.0582 29.0869C24.689 29.8439 23.969 30.4808 22.8981 30.9978C21.8273 31.5055 20.5811 31.7593 19.1595 31.7593C17.5994 31.7593 16.2655 31.4639 15.1578 30.8732C14.0593 30.2824 13.3393 29.53 12.9977 28.6161C12.6561 27.7022 12.4854 26.4053 12.4854 24.7252V23.2574H17.8995V25.9852C17.8995 26.8253 17.9733 27.3653 18.121 27.6053C18.2779 27.8453 18.5503 27.9653 18.938 27.9653C19.3257 27.9653 19.6118 27.813 19.7965 27.5084C19.9903 27.2038 20.0872 26.7514 20.0872 26.1514C20.0872 24.8313 19.9072 23.9682 19.5472 23.5621C19.178 23.1559 18.2687 22.4774 16.8194 21.5266C15.3701 20.5665 14.4101 19.8696 13.9393 19.4357C13.4685 19.0018 13.0762 18.4018 12.7623 17.6356C12.4577 16.8694 12.3054 15.8909 12.3054 14.7001C12.3054 12.9831 12.5223 11.7277 12.9562 10.9338C13.3993 10.1399 14.1101 9.52142 15.0886 9.07832C16.0671 8.62599 17.2487 8.39983 18.6333 8.39983C20.1473 8.39983 21.435 8.64445 22.4966 9.13371C23.5674 9.62296 24.2736 10.2414 24.6151 10.9892C24.9659 11.7277 25.1413 12.9877 25.1413 14.7693V15.6555Z" fill="white"/><defs><linearGradient id="lg_ftr" x1="0" y1="38" x2="38" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#EC4C86"/><stop offset="1" stop-color="#6152FF"/></linearGradient></defs></svg>
+            <span>STRUCT</span>
+          </a>
+          <p class="footer-tagline">あなたの業界を変革する<br>バーティカルSaaSソリューション</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>機能</h4>
+          <ul>
+            <li><a href="features/assignment-management.html">アサイン管理</a></li>
+            <li><a href="features/sales-management.html">販売管理</a></li>
+            <li><a href="features/purchase-management.html">購買管理</a></li>
+            <li><a href="features/attendance-expense-management.html">勤怠・経費管理</a></li>
+            <li><a href="features/approval-management.html">承認管理</a></li>
+            <li><a href="features/business-management.html">経営管理</a></li>
+            <li><a href="features/evaluation-management.html">評価管理</a></li>
+            <li><a href="features/information-management.html">情報管理</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>サービス</h4>
+          <ul>
+            <li><a href="pricing.html">価格</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>その他</h4>
+          <ul>
+            <li><a href="security-policy.html">情報セキュリティ方針</a></li>
+            <li><a href="privacy.html">プライバシーポリシー</a></li>
+            <li><a href="non-functional.html">非機能要件の対応</a></li>
+            <li><a href="trade.html">特定商取引法</a></li>
+            <li><a href="terms.html">利用規約</a></li>
+            <li><a href="https://www.jp-cartridge.com/" target="_blank" rel="noopener noreferrer">運営会社</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright © 2026 Cartridge Japan Corporation. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js?v=20260514f"></script>
+  <script src="js/lightbox.js?v=20260514b"></script>
+  <script src="js/spin-in.js?v=20260514b"></script>
+  <script src="js/hero-typewriter.js?v=20260514c"></script>
+
+  <!-- SIV Scripts -->
+  <script>
+  (function(){
+    const canvas = document.getElementById('sivCanvas');
+    if(!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const wrap = canvas.parentElement;
+
+    function resize(){
+      canvas.width  = wrap.offsetWidth;
+      canvas.height = wrap.offsetHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    const COLORS = ['#EC4C86','#6152FF','#14b8a6','#f97316','#a855f7','#22c55e','#f59e0b'];
+    const PARTICLE_COUNT = 38;
+    const particles = Array.from({length: PARTICLE_COUNT}, (_, i) => ({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      r: Math.random() * 2 + 0.6,
+      color: COLORS[i % COLORS.length],
+      speedX: (Math.random() - 0.5) * 0.4,
+      speedY: (Math.random() - 0.5) * 0.4,
+      alpha: Math.random() * 0.5 + 0.2,
+    }));
+
+    function drawParticles(){
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+      ctx.strokeStyle = 'rgba(97,82,255,0.045)';
+      ctx.lineWidth = 1;
+      const gx = canvas.width / 8;
+      const gy = canvas.height / 7;
+      for(let i=0;i<=8;i++){
+        ctx.beginPath(); ctx.moveTo(i*gx,0); ctx.lineTo(i*gx,canvas.height); ctx.stroke();
+      }
+      for(let j=0;j<=7;j++){
+        ctx.beginPath(); ctx.moveTo(0,j*gy); ctx.lineTo(canvas.width,j*gy); ctx.stroke();
+      }
+      particles.forEach(p => {
+        p.x += p.speedX; p.y += p.speedY;
+        if(p.x < 0) p.x = canvas.width;
+        if(p.x > canvas.width) p.x = 0;
+        if(p.y < 0) p.y = canvas.height;
+        if(p.y > canvas.height) p.y = 0;
+        ctx.save();
+        ctx.globalAlpha = p.alpha;
+        ctx.fillStyle = p.color;
+        ctx.shadowColor = p.color;
+        ctx.shadowBlur = 6;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+        ctx.fill();
+        ctx.restore();
+      });
+      requestAnimationFrame(drawParticles);
+    }
+    drawParticles();
+
+    function countUp(el, target, duration){
+      const start = performance.now();
+      const update = now => {
+        const t = Math.min((now-start)/duration, 1);
+        const ease = 1 - Math.pow(1-t, 3);
+        el.textContent = Math.round(target * ease);
+        if(t < 1) requestAnimationFrame(update);
+      };
+      requestAnimationFrame(update);
+    }
+
+    const kv1 = document.getElementById('sivKv1');
+    const kv2 = document.getElementById('sivKv2');
+    const kv3 = document.getElementById('sivKv3');
+    if(kv1 && kv2 && kv3){
+      const observer = new IntersectionObserver(entries => {
+        if(entries[0].isIntersecting){
+          countUp(kv1, 120, 1800);
+          countUp(kv2, 620, 1600);
+          countUp(kv3, 148, 1400);
+          observer.disconnect();
+        }
+      }, {threshold: 0.5});
+      observer.observe(kv1);
+    }
+  })();
+  </script>
+
+  <!-- Solutions Section: 「空・雲・光粒子」Canvas エフェクト -->
+  <script>
+  (function(){
+    const canvas = document.getElementById('solParticleCanvas');
+    if(!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const section = canvas.parentElement;
+
+    let W, H;
+    function resize(){
+      W = canvas.width  = section.offsetWidth;
+      H = canvas.height = section.offsetHeight;
+    }
+    resize();
+    window.addEventListener('resize', () => { resize(); init(); });
+
+    /* ===================================================
+       空・雲・光粒子 エフェクト
+       ① 浮遊する光の粒子（ほんのり輝く点）
+       ② 流れる雲（横に流れる楕円シルエット）
+       ③ ゆっくり漂う光輪（薄いリング）
+    =================================================== */
+
+    // ① 光の粒子
+    let sparks = [];
+    function initSparks(){
+      sparks = [];
+      const n = Math.floor(W * H / 14000);
+      for(let i=0;i<n;i++) spawnSpark(true);
+    }
+    function spawnSpark(rand){
+      const hue = 200 + Math.random()*60; // 水色〜ラベンダー
+      sparks.push({
+        x: Math.random()*W,
+        y: rand ? Math.random()*H : H + 10,
+        r: Math.random()*2.5+0.8,
+        vx:(Math.random()-0.5)*0.3,
+        vy:-(Math.random()*0.4+0.1),
+        alpha: Math.random()*0.35+0.10,
+        hue,
+        life: Math.floor(Math.random()*400)+150,
+        maxLife:0,
+      });
+      sparks[sparks.length-1].maxLife = sparks[sparks.length-1].life;
+    }
+
+    // ② 雲
+    let clouds = [];
+    function initClouds(){
+      clouds = [];
+      const n = Math.max(4, Math.floor(W/300));
+      for(let i=0;i<n;i++) spawnCloud(true);
+    }
+    function spawnCloud(rand){
+      const y = Math.random()*(H*0.65);
+      clouds.push({
+        x: rand ? Math.random()*W : -300,
+        y,
+        w: 120 + Math.random()*220,
+        h: 30  + Math.random()*55,
+        vx: 0.18 + Math.random()*0.28,
+        alpha: 0.08 + Math.random()*0.12,
+        bumps: Array.from({length:5},()=>({
+          dx: Math.random(),
+          dy: -(Math.random()*0.6+0.2),
+          r:  0.3+Math.random()*0.5,
+        })),
+      });
+    }
+
+    // ③ 光輪
+    let rings = [];
+    function spawnRing(){
+      rings.push({
+        x: Math.random()*W,
+        y: Math.random()*(H*0.8),
+        r: 10+Math.random()*25,
+        maxR: 80+Math.random()*120,
+        alpha: 0.18+Math.random()*0.12,
+        speed: 0.5+Math.random()*0.5,
+        hue: 210+Math.random()*50,
+      });
+    }
+
+    function init(){
+      initSparks();
+      initClouds();
+      rings = [];
+    }
+    init();
+
+    setInterval(spawnRing, 1800);
+    setInterval(()=>{ if(sparks.length < Math.floor(W*H/14000)*1.5) spawnSpark(false); }, 300);
+
+    function drawCloud(c){
+      ctx.save();
+      ctx.globalAlpha = c.alpha;
+      // メイン楕円
+      ctx.beginPath();
+      ctx.ellipse(c.x, c.y, c.w*0.5, c.h*0.5, 0, 0, Math.PI*2);
+      ctx.fillStyle = 'rgba(255,255,255,1)';
+      ctx.fill();
+      // バンプ
+      c.bumps.forEach(b=>{
+        const bx = c.x + (b.dx-0.5)*c.w;
+        const by = c.y + b.dy*c.h;
+        ctx.beginPath();
+        ctx.ellipse(bx, by, c.w*b.r*0.45, c.h*b.r*0.55, 0, 0, Math.PI*2);
+        ctx.fill();
+      });
+      ctx.restore();
+    }
+
+    let tick=0;
+    function draw(){
+      tick++;
+      ctx.clearRect(0,0,W,H);
+
+      /* --- 雲 --- */
+      clouds = clouds.filter(c=> c.x - c.w/2 < W+350);
+      clouds.forEach(c=>{
+        drawCloud(c);
+        c.x += c.vx;
+        if(c.x - c.w/2 > W+300){
+          c.x = -c.w/2 - 20;
+          c.y = Math.random()*(H*0.65);
+        }
+      });
+      // 雲が少なければ補充
+      if(clouds.length < Math.max(4,Math.floor(W/300))) spawnCloud(false);
+
+      /* --- 光輪 --- */
+      rings = rings.filter(rg=>rg.alpha>0.005);
+      rings.forEach(rg=>{
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(rg.x, rg.y, rg.r, 0, Math.PI*2);
+        ctx.strokeStyle = `hsla(${rg.hue},80%,80%,${rg.alpha.toFixed(3)})`;
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+        ctx.restore();
+        rg.r += rg.speed;
+        rg.alpha *= 0.975;
+        if(rg.r >= rg.maxR) rg.alpha=0;
+      });
+
+      /* --- 光粒子 --- */
+      sparks.forEach(sp=>{
+        sp.life--;
+        sp.x += sp.vx;
+        sp.y += sp.vy;
+        sp.vx += (Math.random()-0.5)*0.015;
+        // 画面外折り返し
+        if(sp.x<0) sp.x=W; if(sp.x>W) sp.x=0;
+        if(sp.y<0) sp.y=H;
+
+        const t = sp.life/sp.maxLife;
+        let a = sp.alpha;
+        if(t<0.15) a *= t/0.15;
+        else if(t>0.80) a *= (1-t)/0.20;
+
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(sp.x, sp.y, sp.r, 0, Math.PI*2);
+        ctx.fillStyle = `hsla(${sp.hue},70%,78%,${a.toFixed(3)})`;
+        ctx.shadowBlur = 8;
+        ctx.shadowColor = `hsla(${sp.hue},80%,80%,0.5)`;
+        ctx.fill();
+        ctx.restore();
+
+        if(sp.life<=0){
+          sp.x=Math.random()*W; sp.y=H;
+          sp.vx=(Math.random()-0.5)*0.3;
+          sp.vy=-(Math.random()*0.4+0.1);
+          sp.hue=200+Math.random()*60;
+          sp.alpha=Math.random()*0.35+0.10;
+          sp.maxLife=Math.floor(Math.random()*400)+150;
+          sp.life=sp.maxLife;
+        }
+      });
+
+      requestAnimationFrame(draw);
+    }
+    draw();
+  })();
+  </script>
+
+
+</body>
+</html>
